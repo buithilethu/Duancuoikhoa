@@ -10,13 +10,36 @@
     <link rel="stylesheet" href="style.css">
     <style>
         div.MyAccount{
-            padding-top: 12em;
-            padding-bottom: 3em;
-            padding-right: 8.5em;
+            padding: 0 8.75em 8.75em 8.75em ;
+            display: flex;
+            flex-direction: column;
+            gap: 8.125em;
+            flex-wrap: wrap;
+        }
+        div.GroupRoadmapMyAccount{
+            font-size:0.875em ;
+            padding-top:15em ;
             display: flex;
             flex-direction: row;
-            align-items: center;
-            gap: 8.0625em;
+            justify-content: space-between;
+        }
+        div.Roadmap{
+            display: flex;
+            gap: 0.75em;
+        }
+        div.Roadmap a{
+            text-decoration: none;
+            color: #000;
+        }
+        .home{
+            opacity: 0.5;
+        }
+        div.TextRoadMap{
+            display: flex;
+            gap: 0.75em;
+        }
+        .red{
+            color: #DB4444;
         }
     </style>
 </head>
@@ -58,19 +81,30 @@
                         <input type="text" placeholder="What are you looking for?">
                         <a href="#"><img src="./Image/Header/Search.png" alt=""></a>
                     </div>
-                    <!-- <div class="GroupLogo">
+                    <div class="GroupLogo">
                         <a href="#"><img src="./Image/Header/Tym.png" alt=""></a>
                         <a href="#"><img src="./Image/Header/Shopping.png" alt=""></a>
-                        <a href="#"><img src="./Image/Header/user.png" alt=""></a>
-                    </div> -->
+                        <a href="#"><img src="./Image/MyAccount/user.png" alt=""></a>
+                    </div>
                 </div>
-                
             </div>
-            
             <div style="background-color:white"><hr></div>
         </div>
         <div class="MyAccount">
-
+            <div class="GroupRoadmapMyAccount">
+                <div class="Roadmap">
+                    <a href="E-CommerceHomePage.html"><p class="home">Home </p></a>
+                    <p class="home">/</p>  
+                    <a href="MyAccount.html"><p>My Account</p></a>
+                </div>
+                <div class="TextRoadMap">
+                    <p>Welcome!</p> 
+                    <p class="red">Md Rimel</p>
+                </div>
+            </div>
+            <div class="Content">
+                
+            </div>
         </div>
         <div class="Footer">
             <div class="FooterTop">
