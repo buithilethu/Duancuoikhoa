@@ -1,0 +1,300 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+div.Contain{
+    border: 0.2em solid #000000;
+    display: flex;
+    flex-direction: column;
+}
+/* @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  } */
+/* E-Commerce HomePage */
+
+div.GroupHeader{
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+/* Top Header */
+div.TopHeader{
+    background-color: #000000;
+    color:#FAFAFA ;
+    display: flex;
+    justify-content: space-evenly;
+}
+div.GroupTopHeader{
+    display: flex;
+    align-items: center;
+    gap:12.875em;
+    justify-content: space-evenly;
+}
+div.SummerSale{
+    display: flex;
+    padding: 0.75em 8.5em;
+    gap:0.5em; 
+    align-items: center;
+}
+div.Summer{
+    font-size:0.875em;
+}
+div.Shopnow a{
+    color: #FAFAFA;
+    font-size: 0.875em;
+    font-weight: bold;
+}
+/* div.Language {
+    display: flex;
+    justify-content: space-evenly;
+} */
+select {
+    background-color: #000000;
+    color: #FAFAFA;
+    border: none;
+    outline: none;
+}
+
+/* Header */
+div.Header{
+    padding: 0 8.75em 0 8.75em;
+    padding-top: 2.5em;
+    background-color:white;
+    display: flex;
+    justify-content: space-evenly;
+}
+div.GroupExclusive{
+    display: flex;
+    gap: 9.75em;
+    align-items: center;
+    justify-content: space-between;
+}
+div.Exclusivelogo{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+div.Menu{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    font-size: 1em;
+}
+div.Menu a{
+    text-decoration: none;
+    color: #000000;
+    opacity: 0.5;
+}
+div.Menu a:hover{
+    opacity: 1;
+}
+div.Menu a.active{
+    border-bottom:2px solid #000000;
+}
+div.GroupSearchLogo{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 1em;
+    font-size: 0.75em;
+}
+div.GroupSearch{
+    display: flex;
+    gap: 0.625em;
+    border: 0.09375em solid #F5F5F5;
+    background-color: #F5F5F5;
+    padding: 0.3125em 0.625em;
+}
+div.GroupSearch input{
+    outline: none;
+    border: none;
+    background-color: #F5F5F5;
+}
+div.GroupSearch a{
+    display: flex;
+    align-items: center;
+}
+div.GroupLogo{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+div.GroupLogo a{
+    display: flex;
+    align-items: center;
+}
+/* đường kẻ cắt trang */
+hr{
+    margin: 1.25em 0;
+}
+
+/* Footer */
+div.Footer{
+    background-color: #000000;
+    color:#FFFFFF;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.Footer hr{
+    padding: 0;
+}
+/* Footer Top */
+div.FooterTop{
+    padding: 0 8.5em;
+    padding-top: 5.625em;
+    padding-bottom: 4.375em;
+    display: flex;
+    align-items:first baseline;
+    justify-content: space-evenly;
+}
+
+/*Exclusive  */
+div.Exclusive{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:1em;
+}
+div.GroupText1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:1em;
+}
+div.text3{
+    font-size: 1em;
+}
+
+div.Send{
+    display: flex;
+    align-items: center;
+    border: 0.0625em solid #F5F5F5;
+    padding: 0.3875em 0.625em;
+}
+div.Send input{
+    outline: none;
+    border: none;
+    background-color: #000000;
+    color: #FAFAFA;
+}
+
+/* Support */
+div.Support{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-content: space-evenly;
+    gap:1.5em;
+}
+div.GroupText2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:1em;
+    font-size: 1em;
+}
+/* Account */
+div.Account{
+    display: flex;
+    flex-direction: column;
+    gap:1.5em;
+}
+div.BtnAccount{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:1em;
+}
+div.BtnAccount a{
+    color: #FAFAFA;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/* Quick Links */
+
+div.QuickLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:1.5em;
+}
+div.BtnQuickLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:1em;
+}
+div.BtnQuickLinks a{
+    color: #FAFAFA;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/* Download App */
+div.DownloadApp{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:1.5em;
+}
+div.GroupDown{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:1.5em;
+}
+div.GroupText3{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+div.textApp{
+    font-size: 0.75em;
+    opacity: 0.5;
+}
+div.GroupImage{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+div.ImageApp{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+div.GroupIcon{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+/* Footer Bottom */
+div.FooterBottom{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+div.copy{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    gap:0.375em ;
+    opacity: 0.5;
+}
