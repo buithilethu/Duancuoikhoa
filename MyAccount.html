@@ -10,18 +10,15 @@
     <link rel="stylesheet" href="style.css">
     <style>
         div.MyAccount{
-            padding: 0 8.75em 8.75em 8.75em ;
+            padding: 15em 8.75em 8.75em 8.75em ;
             display: flex;
             flex-direction: column;
             gap: 8.125em;
-            flex-wrap: wrap;
         }
         div.GroupRoadmapMyAccount{
             font-size:0.875em ;
-            padding-top:15em ;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            justify-content:space-between;
         }
         div.Roadmap{
             display: flex;
@@ -43,8 +40,7 @@
         }
         div.Content{
             display: flex;
-            flex-direction:row;
-            gap: 5.625em;
+            justify-content: space-around;
         }
         div.ContentLeft{
             display: flex;
@@ -61,18 +57,72 @@
             color: #DB4444;
             opacity: 1;
         }
-        div.ContentRight form{
+        div.GroupManage{
             display: flex;
             flex-direction: column;
             gap:1.25em;
+        }
+        div.GroupManage1{
+            padding-left: 2.5em;
+            display: flex;
+            flex-direction: column;
+            gap:0.5em;
+        }
+        div.GroupMyOrders{
+            display: flex;
+            flex-direction: column;
+            gap:1.25em;
+        }
+        div.GroupMyOrders a{
+            text-decoration: none;
+            color: black;
+            opacity: 0.5;
+        }
+        div.GroupOrder{
+            padding-left: 2.5em;
+            display: flex;
+            flex-direction: column;
+            gap:0.5em;
+        }
+        div.ContentRight form{
+            display: flex;
+            flex-direction: column;
+            gap:1.875em;
             box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             padding: 2.5em 5em;
+            padding-bottom: 5em;
             font-size: 1em;
             border-radius: 0.25em;
         }
         label[for="edit"]{
             font-size: 1.25em;
             color: #DB4444;
+        }
+        div.Name{
+            display: flex;
+            gap:3.125em ;
+        }
+        div.Firstname input{ 
+            padding:1.25em ;
+        }
+        div.Lastname input{
+            padding:1.25em ;
+        }
+        input{
+            border-radius: 0.25em;
+            border: none;
+            background-color:#F5F5F5 ;
+            opacity: 0.5;
+        }
+        div.EmailAddress{
+            display: flex;
+            gap:3.125em ;
+        }
+        div.Email input{
+            padding:1.25em ;    
+        }
+        div.Address input{
+            padding: 1.25em;
         }
         button[type="submit"]{
             background-color: #DB4444;
@@ -86,6 +136,14 @@
             border: none;
             background-color: white;
             padding: 1em 2em;
+        }
+        div.Password{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        div.Password input{
+            padding: 1.25em;
         }
     </style>
 </head>
@@ -151,7 +209,7 @@
             <div class="Content">
                 <div class="ContentLeft">
                     <div class="GroupManage">
-                        <p>Manage My Account</p>
+                        <h4>Manage My Account</h4>
                         <div class="GroupManage1">
                             <a href="#" class="redp"><p>My Profile</p></a>
                             <a href="#"><p>Address Book</p></a>
@@ -159,13 +217,13 @@
                         </div>
                     </div>
                     <div class="GroupMyOrders">
-                        <p>My Orders</p>
+                        <h4>My Orders</h4>
                         <div class="GroupOrder">
                             <a href="#"><p>My Returns</p></a>
                             <a href="#"><p>My Cancellations</p></a>
                         </div>
                     </div>
-                    <p>My WishList</p>
+                    <h4>My WishList</h4>
                 </div>
                 <div class="ContentRight">
                     <form action=""method="post">
