@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePage</title>
+    <title>Cart</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        div.Cart{
+            padding: 15em 8.75em 8.75em 8.75em ;
+            display: flex;
+            flex-direction: column;
+            gap: 5em;
+        }
+        div.RoadMapCart{
+            display: flex;
+            gap:0.75em;
+            font-size:0.875em ;
+        }
+        div.RoadMapCart a{
+            text-decoration: none;
+            color: #000; 
+        }
+        .home{
+            opacity: 0.5;
+        }
+    </style>
 </head>
 <body>
-    <div class="Contain">
+    <div class="MainCart">
         <div class="GroupHeader">
             <div class="TopHeader">
                 <div class="GroupTopHeader">
@@ -36,10 +56,10 @@
                         <p>Exclusive</p>
                     </div>
                     <div class="Menu">
-                        <a class="active" href="E-CommerceHomePage.html">Home</a>
+                        <a href="E-CommerceHomePage.html">Home</a>
                         <a href="Contact.html">Contact</a>
                         <a href="About.html">About</a>
-                        <a href="SignUp.html">Sign Up</a>
+                        <a class="active" href="SignUp.html">Sign Up</a>
                     </div>
                 </div>
                 <div class="GroupSearchLogo">
@@ -50,17 +70,19 @@
                     <div class="GroupLogo">
                         <a href="#"><img src="./Image/Header/Tym.png" alt=""></a>
                         <a href="Cart.html"><img src="./Image/Header/Shopping.png" alt=""></a>
-                        <!-- <a href="#"><img src="./Image/Header/user.png" alt=""></a> -->
+                        <a href="SignUp.html"><img src="./Image/MyAccount/user.png" alt=""></a>
                     </div>
                 </div>
             </div>
-            <hr>
+            <div style="background-color:white"><hr></div>
         </div>
-        
-        <div class="MainHomePage">
-
+        <div class="Cart">
+            <div class="RoadMapCart">
+                <a href="E-CommerceHomePage.html"><p class="home">Home </p></a>
+                    <p class="home">/</p>  
+                    <a href="Cart.html"><p>Cart</p></a>
+            </div>
         </div>
-        
         <div class="Footer">
             <div class="FooterTop">
                 <div class="Exclusive">
@@ -131,7 +153,7 @@
                     &copy;<p>Copyright Rimel 2022. All right reserved</p>
                 </div>
             </div>
-        </div>
-    </div>
+        </div>  
+    </div> 
 </body>
 </html>
