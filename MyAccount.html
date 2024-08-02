@@ -41,6 +41,52 @@
         .red{
             color: #DB4444;
         }
+        div.Content{
+            display: flex;
+            flex-direction:row;
+            gap: 5.625em;
+        }
+        div.ContentLeft{
+            display: flex;
+            flex-direction: column;
+            gap:1.25em;
+            font-size: 1em;
+        }
+        div.ContentLeft a{
+            text-decoration: none;
+            color: black;
+            opacity: 0.5;
+        }
+        div.ContentLeft a.redp{
+            color: #DB4444;
+            opacity: 1;
+        }
+        div.ContentRight form{
+            display: flex;
+            flex-direction: column;
+            gap:1.25em;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 2.5em 5em;
+            font-size: 1em;
+            border-radius: 0.25em;
+        }
+        label[for="edit"]{
+            font-size: 1.25em;
+            color: #DB4444;
+        }
+        button[type="submit"]{
+            background-color: #DB4444;
+            border: none;
+            color: white;
+            padding: 1em 2em;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 0.25em;
+        }
+        button[type="reset"]{
+            border: none;
+            background-color: white;
+            padding: 1em 2em;
+        }
     </style>
 </head>
 <body>
@@ -103,7 +149,59 @@
                 </div>
             </div>
             <div class="Content">
-                
+                <div class="ContentLeft">
+                    <div class="GroupManage">
+                        <p>Manage My Account</p>
+                        <div class="GroupManage1">
+                            <a href="#" class="redp"><p>My Profile</p></a>
+                            <a href="#"><p>Address Book</p></a>
+                            <a href="#"><p>My Payment Options</p></a>
+                        </div>
+                    </div>
+                    <div class="GroupMyOrders">
+                        <p>My Orders</p>
+                        <div class="GroupOrder">
+                            <a href="#"><p>My Returns</p></a>
+                            <a href="#"><p>My Cancellations</p></a>
+                        </div>
+                    </div>
+                    <p>My WishList</p>
+                </div>
+                <div class="ContentRight">
+                    <form action=""method="post">
+                        <label for="edit">Edit Your Profile</label>
+                        <div class="Name">
+                            <div class="Firstname">
+                                <label for="Firstname">First Name</label><br>
+                                <input type="text"id="Firstname"placeholder="Md">
+                            </div> 
+                            <div class="Lastname">
+                                <label for="Lastname">Last Name</label><br>
+                                <input type="text" id="Lastname" placeholder="Rimel">
+                            </div> 
+                        </div>
+                        <div class="EmailAddress">
+                            <div class="Email">
+                                <label for="Email">Email Address</label><br>
+                                <input type="email" id="Email" placeholder="rimelllll@gmail.com">
+                            </div>
+                            <div class="Address">
+                                <label for="Address">Address</label><br>
+                                <input type="text" id="Address" placeholder="Kingston,5236,United State">
+                            </div>
+                        </div>
+                        <div class="Password">
+                            <label for="PasswordChanges">Password Changes</label><br>
+                            <input type="text"id="PasswordChanges" placeholder="Current Password"><br>
+                            <input type="text"id="PasswordChanges" placeholder=" New Password"><br>
+                            <input type="text"id="PasswordChanges" placeholder="Confirm New Password">
+                        </div>
+                        <div class="Save">
+                            <button type="reset">Cancel</button>
+                            <button type="submit">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="Footer">
