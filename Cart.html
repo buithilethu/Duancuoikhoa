@@ -35,40 +35,21 @@
         div.GroupTable{
             display: flex;
             flex-direction: column;
-            gap:1.5em
+            gap:1.5em;
+            padding: 0 8.75em;
         }
         div.Table{
-            display: flex;
-            flex-direction: row;
-            gap:2.5em
+            font-size:1em ;
         }
-        .th{
-            padding: 2.5em;
+        div.Table tbody{
             display: flex;
-            flex-direction:row;
+            flex-direction: column;
+            gap:2.5em;
+        }
+        tr[class="th"]{
+            display: flex;
             gap: 17.75em;
-        }
-        .LCD{
-            padding: 2.5em;
-            display: flex;
-            flex-direction: row;
-            gap: 11.25em;
-        }
-        .Game{
-            padding: 2.5em;
-            display: flex;
-            flex-direction: row;
-            gap: 10.75em;
-        }
-        .img{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 1.25em;
-        }
-        .number{
-            padding-right:6.25em;
-            padding-top: 0.25em;
+            padding: 2.5em 1.25em;
         }
     </style>
 </head>
@@ -129,24 +110,26 @@
                 <div class="GroupTable">
                     <div class="Table">
                         <table>
-                        <tr class="th">
-                            <th>Product</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            <th>Subtotal</th>
-                        </tr>
-                        <tr class="LCD">
-                            <td class="img"><img src="./Image/Cart/LCDMonitor.png" alt="">LCD Monitor</td>
-                            <td class="number">$650</td>
-                            <td><input type="number" min="1"></td>
-                            <td>$650</td>
-                        </tr>
-                        <tr class="Game">
-                            <td class="img"><img src="./Image/Cart/Gamepad.png" alt="">H1 Gamepad</td>
-                            <td class="number">$550</td>
-                            <td><input type="number" min="1"></td>
-                            <td>$1100</td>
-                        </tr>
+                            <tbody>
+                                <tr class="th">
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Subtotal</th>
+                                </tr>
+                                <tr class="LCD">
+                                    <td><img src="./Image/Cart/LCDMonitor.png" alt=""><p>LCD Monitor</p></td>
+                                    <td>$650</td>
+                                    <td><input type="number" min="1"></td>
+                                    <td>$650</td>
+                                </tr>
+                                <tr class="Game">
+                                    <td><img src="./Image/Cart/Gamepad.png" alt=""><p>H1 Gamepad</p></td>
+                                    <td>$550</td>
+                                    <td><input type="number" min="1"></td>
+                                    <td>$1100</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                     <div class="Update">
