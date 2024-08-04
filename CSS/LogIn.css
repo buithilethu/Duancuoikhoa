@@ -1,0 +1,83 @@
+
+        /* Form đăng nhập */
+        div.FormLogin{
+            padding-top: 12em;
+            padding-bottom: 3em;
+            padding-right: 8.5em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8.0625em;
+            flex-wrap: wrap;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 2.5em;
+        }
+        div.GroupLogIn{
+            display: flex;
+            flex-direction: column;
+            gap: 3em;
+        }
+        div.GroupText{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+        }
+        div.Text1{
+            font-size: 2.25em;
+        }
+        div.Text2{
+            font-size: 1em;
+        }
+        div.GroupInput{
+            display: flex;
+            flex-direction: column;
+            gap: 2.5em;
+        }
+        div.Input1{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            font-size: 1em;
+            opacity: 0.5;
+            
+        } 
+        div.Input2{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            font-size: 1em;
+            opacity: 0.5;
+        }
+        div.GroupInput input{
+            outline: none;
+            border: none;
+            background-color:white;
+            border-bottom: 0.05em solid ;
+            
+        }
+        /* nút login */
+        div.BtnLogIn{
+            display: flex;
+            align-items: center; 
+            gap:5.4375em; 
+            color:#F95C5C; 
+            font-size: 1em;              
+        }
+        div.BtnLogIn button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.625em;
+            background-color: #F95C5C;
+            border: none;
+            color: white;
+            padding: 1em 3em ;
+        }
+        div.BtnLogIn a{
+            text-decoration: none;
+            color: #F95C5C;
+        }
+   

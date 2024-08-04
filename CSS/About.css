@@ -1,0 +1,172 @@
+div.About{
+    padding-bottom:8.75em ;
+    padding-left: 8.75em;
+    display: flex;
+    flex-direction: column;
+    gap: 8.125em;
+    
+}
+div.GroupRoadmapAbout{
+    display: flex;
+    gap:0.75em;
+    font-size:1em ;
+    padding-top:15em ;
+}
+div.GroupRoadmapAbout a{
+    text-decoration: none;
+    color: #000;
+    
+}
+.home{
+    opacity: 0.5;
+}
+.number{
+    font-size: 2em;
+    font-weight: bold;
+}
+.avatar{
+    font-size: 2em;
+
+}
+.major{
+    font-size: 1em;
+}
+.texttop{
+   font-size: 1.25em;
+    font-weight: 450;
+}
+.textDown{
+    font-size: 0.875em;
+}
+.textGroupTop{
+    font-size: 1em;
+}
+
+div.GroupOurStory{
+    display: flex;
+    flex-direction:row;
+    gap: 1.5em;
+}
+div.TextOurStory{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.875em;
+}
+.OurStory {
+    font-size: 3.375em;
+    font-weight: 550;
+}
+div.TextStory{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    font-size: 1em;
+}
+div.GroupTop{
+    padding-right: 8.75em;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 1.875em;
+}
+div.one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.875em 3.125em;
+    gap: 1.875em;
+    text-align: center;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius:0.25em;
+} 
+div.two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2em  2.1875em;
+    gap: 1.675em;
+    border-radius:0.25em;
+    background-color: #DB4444;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+div.third{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    padding:  1.875em;
+    text-align: center;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius:0.25em;
+}
+div.Img{
+    width:50%;
+}
+div.four{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    padding:  1.875em;
+    text-align: center;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius:0.25em;
+}
+div.GroupMiddle{
+    padding-right: 8.75em;
+    display: flex;
+    flex-direction:column;
+    gap: 3.125em;
+}
+div.GroupAvatar{
+    display: flex;
+    justify-content: space-between;
+}
+div.TextIcon{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+div.Text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+div.GroupGlide{
+    display: flex;
+    gap: 0.75em;
+    justify-content: center;
+} 
+div.GroupDownAbout{
+    display: flex;
+    padding-right: 8.75em;
+    gap: 5.5em;
+    justify-content: center;
+}
+div.Down1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    text-align: center;
+}
+div.Down2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    text-align: center;
+}
+div.Down3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    text-align: center;
+}

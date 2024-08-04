@@ -1,0 +1,104 @@
+/* Form đăng ký  */
+div.FormSignUp{
+    padding-top: 12em;
+    padding-bottom: 3em;
+    padding-right: 8.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8.0625em;
+    flex-wrap: wrap;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    
+}
+div.GroupTextSign{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1.5em;
+}
+div.TextS1{
+    font-size: 2.25em;
+}
+div.TextS2{
+    font-size: 1em;
+}
+/* Nhập dữ liệu đăngkí */
+div.GroupBtnSign{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+div.GroupInput{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+div.GroupInput input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-size: 1em;
+    opacity: 0.5;
+}
+input{
+    outline: none;
+    border: none;
+    border-bottom: 0.05em solid;
+}
+div.Btn{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    font-size: 1em;
+}
+/* Tạo tài khoản  */
+div.BtnCreate{
+    display: flex;
+    gap:0.625em;
+    padding: 1em 7.625em;
+    background-color: #DB4444;
+}
+div.BtnCreate button{
+    background-color: #DB4444;
+    color: white;
+    border: none;
+    font-size: 1em;
+}
+div.GroupDown{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    gap:2em;
+}
+/* Đăng nhập bằng google */
+div.googleSingin{
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em 5.375em;
+    border: 0.05em solid;
+    gap: 0.625em;
+}
+div.googleSingin button{
+    display: flex;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+/* Đăng nhập khi đã có tài khoản */
+div.Singin{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+a{
+    color: #f03535;
+    text-decoration: none;
+}
+div.Singin a.active{
+    border-bottom:2px solid #ea5454;
+}

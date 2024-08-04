@@ -1,0 +1,159 @@
+div.Cart{
+    padding: 15em 8.75em 0em 8.75em ;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    border-radius:0.25em ;
+}
+/* Thanh road map */
+div.RoadMapCart{
+    display: flex;
+    gap:0.75em;
+    font-size:0.875em ;
+}
+div.RoadMapCart a{
+    text-decoration: none;
+    color: #000; 
+}
+.home{
+    opacity: 0.5;
+}
+/* Bảng thông tin đơn hàng */
+div.ContentCart{
+    display: flex;
+    flex-direction: column;
+    gap:5em ;
+}
+div.GroupTable{
+    display: flex;
+    flex-direction: column;
+    gap:3.5em;
+    padding-left:  4.5em;
+}
+div.Table{
+    font-size:1em ;
+    padding-right:  4.5em;
+}
+div.Table tbody{
+    display: flex;
+    flex-direction: column;
+    gap:2.5em;
+}
+tr[class="th"]{
+    display: flex;
+    gap: 17.75em;
+    padding: 2.5em;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+tr[class="td"]{
+    display: flex;
+    align-items: center;
+    padding: 2.5em ;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+td[class="Product"]{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+td[class="Price1"]{
+    padding-left: 11.625em;    
+}
+td[class="Price2"]{
+    padding-left: 11.325em;    
+}
+td[class="Quantity"]{
+    padding-left: 17.75em; 
+      
+}
+input[type="number"]{
+    padding: 1em;
+    width: 5em;
+}
+td[class="Subtotal"]{
+    padding-left: 18.75em;    
+}
+/* Button Update  */
+div.Update{
+    font-size: 1em; 
+    display: flex;
+    justify-content:space-between;
+    padding-right:  6.75em;
+
+}
+button[class="Return"]{
+    background-color: white;
+    padding: 1em 3em;
+    border: none;
+    border: 0.0625em solid black;
+    border-radius:0.25em ;
+}
+button[class="Update"]{
+    background-color:white;
+    padding: 1em 3em;
+    border: none;
+    border: 0.0625em solid black;
+}
+div.GroupCart{
+    display: flex;
+    justify-content: space-between;
+    padding:0 5em 5em 4.5em;
+}
+/* Input mã giảm giá */
+div.Coupon{
+    display: flex;
+    gap:1em;
+    font-size: 1em;
+    align-items: flex-start;
+}
+input[type="text"]{
+    padding: 1em 3em;
+    border: none;
+    border: 0.0625em solid #000;
+    border-radius:0.25em ;
+}
+button[class="Apply"]{
+    background-color: #F95C5C;
+    padding: 1em 3em;
+    border: none;
+    border: 0.0625em  solid #F95C5C;
+    color: white;
+    border-radius:0.25em ;
+}
+/* Tổng  tiền cần thanh toán */
+div.CartTotal{
+    display: flex;
+    flex-direction: column;
+    padding: 1.25em 2.5em;
+    border: 0.15em solid #000;
+    gap: 2.5em;
+}
+div.CartTotal b{
+    font-size: 1.25em;
+}
+div.SubTotal{
+    display: flex;
+    gap: 19.1875em;
+    border-bottom:0.0625em solid #858484;
+}
+div.Shipping {
+    display: flex;
+    gap: 19.625em;
+    border-bottom:0.0625em solid #858484;
+}
+div.Total{
+    display: flex;
+    gap: 20.9375em;
+}
+button[class="Checkout"]{
+    background-color: #F95C5C;
+    padding: 1em 3em;
+    border: none;
+    border: 0.0625em  solid #F95C5C;
+    color: white;
+    border-radius:0.25em ;
+}
+button[class="Checkout"] a{
+    text-decoration: none;
+    color: white;
+}

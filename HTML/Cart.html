@@ -7,168 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        div.Cart{
-            padding: 15em 8.75em 0em 8.75em ;
-            display: flex;
-            flex-direction: column;
-            gap: 5em;
-            border-radius:0.25em ;
-        }
-        /* Thanh road map */
-        div.RoadMapCart{
-            display: flex;
-            gap:0.75em;
-            font-size:0.875em ;
-        }
-        div.RoadMapCart a{
-            text-decoration: none;
-            color: #000; 
-        }
-        .home{
-            opacity: 0.5;
-        }
-        /* Bảng thông tin đơn hàng */
-        div.ContentCart{
-            display: flex;
-            flex-direction: column;
-            gap:5em ;
-        }
-        div.GroupTable{
-            display: flex;
-            flex-direction: column;
-            gap:3.5em;
-            padding-left:  4.5em;
-        }
-        div.Table{
-            font-size:1em ;
-            padding-right:  4.5em;
-        }
-        div.Table tbody{
-            display: flex;
-            flex-direction: column;
-            gap:2.5em;
-        }
-        tr[class="th"]{
-            display: flex;
-            gap: 17.75em;
-            padding: 2.5em;
-            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-        tr[class="td"]{
-            display: flex;
-            align-items: center;
-            padding: 2.5em ;
-            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-        td[class="Product"]{
-            display: flex;
-            align-items: center;
-            gap: 1em;
-        }
-        td[class="Price1"]{
-            padding-left: 11.625em;    
-        }
-        td[class="Price2"]{
-            padding-left: 11.325em;    
-        }
-        td[class="Quantity"]{
-            padding-left: 17.75em; 
-              
-        }
-        input[type="number"]{
-            padding: 1em;
-            width: 5em;
-        }
-        td[class="Subtotal"]{
-            padding-left: 18.75em;    
-        }
-        /* Button Update  */
-        div.Update{
-            font-size: 1em; 
-            display: flex;
-            justify-content:space-between;
-            padding-right:  6.75em;
-
-        }
-        button[class="Return"]{
-            background-color: white;
-            padding: 1em 3em;
-            border: none;
-            border: 0.0625em solid black;
-            border-radius:0.25em ;
-        }
-        button[class="Update"]{
-            background-color:white;
-            padding: 1em 3em;
-            border: none;
-            border: 0.0625em solid black;
-        }
-        div.GroupCart{
-            display: flex;
-            justify-content: space-between;
-            padding:0 5em 5em 4.5em;
-        }
-        /* Input mã giảm giá */
-        div.Coupon{
-            display: flex;
-            gap:1em;
-            font-size: 1em;
-            align-items: flex-start;
-        }
-        input[type="text"]{
-            padding: 1em 3em;
-            border: none;
-            border: 0.0625em solid #000;
-            border-radius:0.25em ;
-        }
-        button[class="Apply"]{
-            background-color: #F95C5C;
-            padding: 1em 3em;
-            border: none;
-            border: 0.0625em  solid #F95C5C;
-            color: white;
-            border-radius:0.25em ;
-        }
-        /* Tổng  tiền cần thanh toán */
-        div.CartTotal{
-            display: flex;
-            flex-direction: column;
-            padding: 1.25em 2.5em;
-            border: 0.15em solid #000;
-            gap: 2.5em;
-        }
-        div.CartTotal b{
-            font-size: 1.25em;
-        }
-        div.SubTotal{
-            display: flex;
-            gap: 19.1875em;
-            border-bottom:0.0625em solid #858484;
-        }
-        div.Shipping {
-            display: flex;
-            gap: 19.625em;
-            border-bottom:0.0625em solid #858484;
-        }
-        div.Total{
-            display: flex;
-            gap: 20.9375em;
-        }
-        button[class="Checkout"]{
-            background-color: #F95C5C;
-            padding: 1em 3em;
-            border: none;
-            border: 0.0625em  solid #F95C5C;
-            color: white;
-            border-radius:0.25em ;
-        }
-        button[class="Checkout"] a{
-            text-decoration: none;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/Cart.css">
 </head>
 <body>
     <div class="MainCart">
@@ -206,12 +46,12 @@
                 <div class="GroupSearchLogo">
                     <div class="GroupSearch">
                         <input type="text" placeholder="What are you looking for?">
-                        <a href="#"><img src="./Image/Header/Search.png" alt=""></a>
+                        <a href="#"><img src="../Image/Header/Search.png" alt=""></a>
                     </div>
                     <div class="GroupLogo">
-                        <a href="#"><img src="./Image/Header/Tym.png" alt=""></a>
-                        <a href="Cart.html"><img src="./Image/Header/Shopping.png" alt=""></a>
-                        <a href="SignUp.html"><img src="./Image/MyAccount/user.png" alt=""></a>
+                        <a href="#"><img src="../Image/Header/Tym.png" alt=""></a>
+                        <a href="Cart.html"><img src="../Image/Header/Shopping.png" alt=""></a>
+                        <a href="SignUp.html"><img src="../Image/MyAccount/user.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -235,13 +75,13 @@
                                     <th>Subtotal</th>
                                 </tr>
                                 <tr class="td">
-                                    <td class="Product"><img src="./Image/Cart/LCDMonitor.png" alt=""><p>LCD Monitor</p></td>
+                                    <td class="Product"><img src="../Image/Cart/LCDMonitor.png" alt=""><p>LCD Monitor</p></td>
                                     <td class="Price1">$650</td>
                                     <td class="Quantity"><input type="number" min="1"></td>
                                     <td class="Subtotal">$650</td>
                                 </tr>
                                 <tr class="td">
-                                    <td class="Product"><img src="./Image/Cart/Gamepad.png" alt=""><p>H1 Gamepad</p></td>
+                                    <td class="Product"><img src="../Image/Cart/Gamepad.png" alt=""><p>H1 Gamepad</p></td>
                                     <td class="Price2">$550</td>
                                     <td class="Quantity"><input type="number" min="1"></td>
                                     <td class="Subtotal">$1100</td>
@@ -281,7 +121,7 @@
                     </div>
                     <div class="Send">
                         <input type="text" placeholder="Enter your email">
-                        <a href="#"><img src="./Image/Footer/Send.png" alt=""></a>
+                        <a href="#"><img src="../Image/Footer/Send.png" alt=""></a>
                     </div>
                 </div>
                 <div class="Support">
@@ -319,19 +159,19 @@
                                 <p>Save $3 with App New User Only</p>
                             </div>
                             <div class="GroupImage">
-                                <div class="Qrcode"><img src="./Image/Footer/Qrcode.png" alt=""></div>
+                                <div class="Qrcode"><img src="../Image/Footer/Qrcode.png" alt=""></div>
                                 <div class="ImageApp">
-                                    <a href="https://play.google.com/store/games?device=windows"><img src="./Image/Footer/GooglePlay.png" alt=""> </a>
-                                    <a href="https://www.apple.com/app-store/"><img src="./Image/Footer/Appstore.png" alt=""></a>
+                                    <a href="https://play.google.com/store/games?device=windows"><img src="../Image/Footer/GooglePlay.png" alt=""> </a>
+                                    <a href="https://www.apple.com/app-store/"><img src="../Image/Footer/Appstore.png" alt=""></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="GroupIcon">
-                        <a href="https://www.facebook.com/"><img src="./Image/Footer/Facebook.png" alt=""></a>
-                        <a href="https://x.com/"><img src="./Image/Footer/Twitter.png" alt=""></a>
-                        <a href="https://www.instagram.com/"><img src="./Image/Footer/Intagram.png" alt=""></a>
-                        <a href="https://www.linkedin.com/"><img src="./Image/Footer/Linkedin.png" alt=""></a>
+                        <a href="https://www.facebook.com/"><img src="../Image/Footer/Facebook.png" alt=""></a>
+                        <a href="https://x.com/"><img src="../Image/Footer/Twitter.png" alt=""></a>
+                        <a href="https://www.instagram.com/"><img src="../Image/Footer/Intagram.png" alt=""></a>
+                        <a href="https://www.linkedin.com/"><img src="../Image/Footer/Linkedin.png" alt=""></a>
                     </div>
                 </div>
             </div>

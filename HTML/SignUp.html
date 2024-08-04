@@ -7,114 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/SingUp.css">
 
-    <style>
-        /* Form đăng ký  */
-        div.FormSignUp{
-            padding-top: 12em;
-            padding-bottom: 3em;
-            padding-right: 8.5em;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 8.0625em;
-            flex-wrap: wrap;
-        }
-        form{
-            display: flex;
-            flex-direction: column;
-            gap: 3em;
-            
-        }
-        div.GroupTextSign{
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            gap: 1.5em;
-        }
-        div.TextS1{
-            font-size: 2.25em;
-        }
-        div.TextS2{
-            font-size: 1em;
-        }
-        /* Nhập dữ liệu đăngkí */
-        div.GroupBtnSign{
-            display: flex;
-            flex-direction: column;
-            gap: 2.5em;
-        }
-        div.GroupInput{
-            display: flex;
-            flex-direction: column;
-            gap: 2.5em;
-        }
-        div.GroupInput input{
-            display: flex;
-            flex-direction: column;
-            gap: 0.5em;
-            font-size: 1em;
-            opacity: 0.5;
-      }
-        input{
-            outline: none;
-            border: none;
-            border-bottom: 0.05em solid;
-        }
-        div.Btn{
-            display: flex;
-            flex-direction: column;
-            gap:1em;
-            font-size: 1em;
-        }
-        /* Tạo tài khoản  */
-        div.BtnCreate{
-            display: flex;
-            gap:0.625em;
-            padding: 1em 7.625em;
-            background-color: #DB4444;
-        }
-        div.BtnCreate button{
-            background-color: #DB4444;
-            color: white;
-            border: none;
-            font-size: 1em;
-        }
-        div.GroupDown{
-            display: flex;
-            flex-direction: column;
-            font-size: 1em;
-            gap:2em;
-        }
-        /* Đăng nhập bằng google */
-        div.googleSingin{
-            display: flex;
-            justify-content: flex-start;
-            padding: 1em 5.375em;
-            border: 0.05em solid;
-            gap: 0.625em;
-        }
-        div.googleSingin button{
-            display: flex;
-            outline: none;
-            border: none;
-            background-color: white;
-        }
-        /* Đăng nhập khi đã có tài khoản */
-        div.Singin{
-            display: flex;
-            justify-content: center;
-            gap: 1em;
-        }
-        a{
-            color: #f03535;
-            text-decoration: none;
-        }
-        div.Singin a.active{
-            border-bottom:2px solid #ea5454;
-        }
-    </style>
 </head>
 <body>
     <div class="MainLogin">
@@ -152,7 +47,7 @@
                     <div class="GroupSearchLogo">
                         <div class="GroupSearch">
                             <input type="text" placeholder="What are you looking for?">
-                            <a href="#"><img src="./Image/Header/Search.png" alt=""></a>
+                            <a href="#"><img src="../Image/Header/Search.png" alt=""></a>
                         </div>
                         <!-- <div class="GroupLogo">
                             <a href="#"><img src="./Image/Header/Tym.png" alt=""></a>
@@ -167,7 +62,7 @@
             </div>
             <div class="FormSignUp">
                 <div class="ImageSignUp">
-                    <img src="./Image/SignUp/phone1.png" alt="">
+                    <img src="../Image/SignUp/phone1.png" alt="">
                 </div>
                 <form action=" " method="post">
                     <div class="GroupTextSign">
@@ -186,7 +81,7 @@
                             </div>
                             <div class="GroupDown">
                                 <div class="googleSingin">
-                                    <img src="./Image/SignUp/Icon-Google.png" alt=""><button>Sign up with Google</button>
+                                    <img src="../Image/SignUp/Icon-Google.png" alt=""><button>Sign up with Google</button>
                                 </div>
                                 <div class="Singin">
                                     Already have an account?<a class="active" href="LogIn.html">Log In</a>
@@ -206,7 +101,7 @@
                         </div>
                         <div class="Send">
                             <input type="text" placeholder="Enter your email">
-                            <a href="#"><img src="./Image/Footer/Send.png" alt=""></a>
+                            <a href="#"><img src="../Image/Footer/Send.png" alt=""></a>
                         </div>
                     </div>
                     <div class="Support">
@@ -244,19 +139,19 @@
                                     <p>Save $3 with App New User Only</p>
                                 </div>
                                 <div class="GroupImage">
-                                    <div class="Qrcode"><img src="./Image/Footer/Qrcode.png" alt=""></div>
+                                    <div class="Qrcode"><img src="../Image/Footer/Qrcode.png" alt=""></div>
                                     <div class="ImageApp">
-                                        <a href="https://play.google.com/store/games?device=windows"><img src="./Image/Footer/GooglePlay.png" alt=""> </a>
-                                        <a href="https://www.apple.com/app-store/"><img src="./Image/Footer/Appstore.png" alt=""></a>
+                                        <a href="https://play.google.com/store/games?device=windows"><img src="../Image/Footer/GooglePlay.png" alt=""> </a>
+                                        <a href="https://www.apple.com/app-store/"><img src="../Image/Footer/Appstore.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="GroupIcon">
-                            <a href="https://www.facebook.com/"><img src="./Image/Footer/Facebook.png" alt=""></a>
-                            <a href="https://x.com/"><img src="./Image/Footer/Twitter.png" alt=""></a>
-                            <a href="https://www.instagram.com/"><img src="./Image/Footer/Intagram.png" alt=""></a>
-                            <a href="https://www.linkedin.com/"><img src="./Image/Footer/Linkedin.png" alt=""></a>
+                            <a href="https://www.facebook.com/"><img src="../Image/Footer/Facebook.png" alt=""></a>
+                            <a href="https://x.com/"><img src="../Image/Footer/Twitter.png" alt=""></a>
+                            <a href="https://www.instagram.com/"><img src="../Image/Footer/Intagram.png" alt=""></a>
+                            <a href="https://www.linkedin.com/"><img src="../Image/Footer/Linkedin.png" alt=""></a>
                         </div>
                     </div>
                 </div>

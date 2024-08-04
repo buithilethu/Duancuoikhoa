@@ -3,98 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LogIn</title>
+    <title>Contact</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Form đăng nhập */
-        div.FormLogin{
-            padding-top: 12em;
-            padding-bottom: 3em;
-            padding-right: 8.5em;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 8.0625em;
-            flex-wrap: wrap;
-        }
-        form{
-            display: flex;
-            flex-direction: column;
-            gap: 2.5em;
-        }
-        div.GroupLogIn{
-            display: flex;
-            flex-direction: column;
-            gap: 3em;
-        }
-        div.GroupText{
-            display: flex;
-            flex-direction: column;
-            gap: 1.5em;
-        }
-        div.Text1{
-            font-size: 2.25em;
-        }
-        div.Text2{
-            font-size: 1em;
-        }
-        div.GroupInput{
-            display: flex;
-            flex-direction: column;
-            gap: 2.5em;
-        }
-        div.Input1{
-            display: flex;
-            flex-direction: column;
-            gap: 0.5em;
-            font-size: 1em;
-            opacity: 0.5;
-            
-        } 
-        div.Input2{
-            display: flex;
-            flex-direction: column;
-            gap: 0.5em;
-            font-size: 1em;
-            opacity: 0.5;
-        }
-        div.GroupInput input{
-            outline: none;
-            border: none;
-            background-color:white;
-            border-bottom: 0.05em solid ;
-            
-        }
-        /* nút login */
-        div.BtnLogIn{
-            display: flex;
-            align-items: center; 
-            gap:5.4375em; 
-            color:#F95C5C; 
-            font-size: 1em;              
-        }
-        div.BtnLogIn button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.625em;
-            background-color: #F95C5C;
-            border: none;
-            color: white;
-            padding: 1em 3em ;
-        }
-        div.BtnLogIn a{
-            text-decoration: none;
-            color: #F95C5C;
-        }
-    </style>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/Contact.css">
+    
 </head>
 <body>
     <div class="Main">
-        <div class="MainLogin">
+        <div class="MainContanct">
             <div class="GroupHeader">
                 <div class="TopHeader">
                     <div class="GroupTopHeader">
@@ -121,57 +40,80 @@
                         </div>
                         <div class="Menu">
                             <a href="E-CommerceHomePage.html">Home</a>
-                            <a href="Contact.html">Contact</a>
+                            <a class="active"href="Contact.html">Contact</a>
                             <a href="About.html">About</a>
-                            <a class="active" href="SignUp.html">Sign Up</a>
+                            <a href="SignUp.html">Sign Up</a>
                         </div>
                     </div>
                     <div class="GroupSearchLogo">
                         <div class="GroupSearch">
                             <input type="text" placeholder="What are you looking for?">
-                            <a href="#"><img src="./Image/Header/Search.png" alt=""></a>
+                            <a href="#"><img src="../Image/Header/Search.png" alt=""></a>
                         </div>
-                        <!-- <div class="GroupLogo">
-                            <a href="#"><img src="./Image/Header/Tym.png" alt=""></a>
-                            <a href="#"><img src="./Image/Header/Shopping.png" alt=""></a>
-                            <a href="#"><img src="./Image/Header/user.png" alt=""></a>
-                        </div> -->
+                        <div class="GroupLogo">
+                            <a href="#"><img src="../Image/Header/Tym.png" alt=""></a>
+                            <a href="Cart.html"><img src="../Image/Header/Shopping.png" alt=""></a>
+                            <a href="SignUp.html"><img src="../Image/Header/user.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
                 <div style="background-color:white"><hr></div>
             </div>
-            <div class="FormLogin">
-                <div class="ImagePhone">
-                    <img src="./Image/LogIn/phone.png" alt="">
+            <div class="Contact">
+                <div class="GroupRoadmap">
+                    <a href="E-CommerceHomePage.html"><p class="home">Home </p></a>
+                    <p class="home">/</p>  
+                    <a href="Contact.html"><p>Contact</p></a>
                 </div>
-                <form action="" method="post">
-                    <div class="GroupLogIn">
-                        <div class="GroupText">
-                            <div class="Text1">Log in to Exclusive</div>
-                            <div class="Text2">Enter your details below</div>
+                <div class="Content">
+                    <div class="GroupCallWrite">
+                        <div class="GroupCall">
+                            <div class="IconCall">
+                                <img src="../Image/Contact/icons-phone.png" alt="">
+                                <p>Call To Us</p>
+                            </div>
+                            <div class="TextCall">
+                                <p>We are available 24/7, 7 days a week.</p>
+                                <p>Phone: +8801611112222</p>
+                            </div>
                         </div>
-                        <div class="GroupInput">
-                            <div class="Input1"><input type="text" placeholder="Email or Phone Number"></div>
-                            <div class="Input2"><input type="password" placeholder="Password"></div>
+                        <hr>
+                        <div class="GroupWrite">
+                            <div class="IconWrite">
+                                <img src="../Image/Contact/icons-mail.png" alt="">
+                                <p>Write To Us</p>
+                            </div>
+                            <div class="TextWrite">
+                                <p>Fill out our form and we will contact you within 24 hours.</p>
+                                <p>Emails: customer@exclusive.com</p>
+                                <p>Emails: support@exclusive.com</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="BtnLogIn">
-                        <button type="submit">Log In</button>
-                        <a href="#">Forget Password?</a>
+                    <div class="GroupSend">
+                        <form action=""method="post">
+                            <div class="GroupInfo">
+                                <div class="text"><input type="text" placeholder="Your Name"><span>*</span></div>
+                                <div class="email"><input type="email" placeholder="Your Email"><span>*</span></div>
+                                <div class="phone"><input type="phone" placeholder="Your Phone"><span>*</span></div>
+                            </div>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            <div class="button"><button class="normal">Send Message</button></div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="Footer">
                 <div class="FooterTop">
                     <div class="Exclusive">
                         <div class="GroupText1">
-                                <h2>Exclusive</h2>
-                                <h3>Subscribe</h3>
+                            <h2>Exclusive</h2>
+                            <h3>Subscribe</h3>
                             <div class="text3">Get 10% off your first order</div>
                         </div>
                         <div class="Send">
                             <input type="text" placeholder="Enter your email">
-                            <a href="#"><img src="./Image/Footer/Send.png" alt=""></a>
+                            <a href="#"><img src="../Image/Footer/Send.png" alt=""></a>
                         </div>
                     </div>
                     <div class="Support">
@@ -209,19 +151,19 @@
                                     <p>Save $3 with App New User Only</p>
                                 </div>
                                 <div class="GroupImage">
-                                    <div class="Qrcode"><img src="./Image/Footer/Qrcode.png" alt=""></div>
+                                    <div class="Qrcode"><img src="../Image/Footer/Qrcode.png" alt=""></div>
                                     <div class="ImageApp">
-                                        <a href="https://play.google.com/store/games?device=windows"><img src="./Image/Footer/GooglePlay.png" alt=""> </a>
-                                        <a href="https://www.apple.com/app-store/"><img src="./Image/Footer/Appstore.png" alt=""></a>
+                                        <a href="https://play.google.com/store/games?device=windows"><img src="../Image/Footer/GooglePlay.png" alt=""> </a>
+                                        <a href="https://www.apple.com/app-store/"><img src="../Image/Footer/Appstore.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="GroupIcon">
-                            <a href="https://www.facebook.com/"><img src="./Image/Footer/Facebook.png" alt=""></a>
-                            <a href="https://x.com/"><img src="./Image/Footer/Twitter.png" alt=""></a>
-                            <a href="https://www.instagram.com/"><img src="./Image/Footer/Intagram.png" alt=""></a>
-                            <a href="https://www.linkedin.com/"><img src="./Image/Footer/Linkedin.png" alt=""></a>
+                            <a href="https://www.facebook.com/"><img src="../Image/Footer/Facebook.png" alt=""></a>
+                            <a href="https://x.com/"><img src="../Image/Footer/Twitter.png" alt=""></a>
+                            <a href="https://www.instagram.com/"><img src="../Image/Footer/Intagram.png" alt=""></a>
+                            <a href="https://www.linkedin.com/"><img src="../Image/Footer/Linkedin.png" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -233,7 +175,7 @@
                         </div>
                     </footer>
                 </div>
-            </div>
+            </div> 
         </div> 
     </div>   
 </body>
