@@ -57,15 +57,16 @@ div.Shopnow a{
     font-size: 0.875em;
     font-weight: bold;
 }
-/* div.Language {
+div.Language {
     display: flex;
     justify-content: space-evenly;
-} */
+}
 select {
     background-color: #000000;
     color: #FAFAFA;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 /* Header */
@@ -296,4 +297,12 @@ div.copy{
     font-size: 1em;
     gap:0.375em ;
     opacity: 0.5;
+}
+/* nút chuyển giao  diện sáng tối */
+button{
+    border: none;
+    background-color:black;
+    color:white;
+    cursor: pointer;
+    padding: 0.5em 1em;
 }

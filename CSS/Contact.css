@@ -111,7 +111,7 @@ textarea{
     padding: 1em 0.8125em;
     resize: none;
 }
-button{
+div.button button{
     background-color: #F95C5C;
     border: none;
     color: white;
