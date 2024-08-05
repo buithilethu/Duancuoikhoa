@@ -75,6 +75,7 @@
             border: none;
             color: white;
             padding: 1em 3em ;
+            cursor: pointer;
         }
         div.BtnLogIn a{
             text-decoration: none;

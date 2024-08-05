@@ -68,6 +68,7 @@ div.BtnCreate button{
     color: white;
     border: none;
     font-size: 1em;
+    cursor: pointer;
 }
 div.GroupDown{
     display: flex;
@@ -88,6 +89,7 @@ div.googleSingin button{
     outline: none;
     border: none;
     background-color: white;
+    cursor: pointer;
 }
 /* Đăng nhập khi đã có tài khoản */
 div.Singin{

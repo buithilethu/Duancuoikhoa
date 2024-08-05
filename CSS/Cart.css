@@ -87,12 +87,14 @@ button[class="Return"]{
     border: none;
     border: 0.0625em solid black;
     border-radius:0.25em ;
+    cursor: pointer;
 }
 button[class="Update"]{
     background-color:white;
     padding: 1em 3em;
     border: none;
     border: 0.0625em solid black;
+    cursor: pointer;
 }
 div.GroupCart{
     display: flex;
@@ -119,6 +121,7 @@ button[class="Apply"]{
     border: 0.0625em  solid #F95C5C;
     color: white;
     border-radius:0.25em ;
+    cursor: pointer;
 }
 /* Tổng  tiền cần thanh toán */
 div.CartTotal{
@@ -152,6 +155,7 @@ button[class="Checkout"]{
     border: 0.0625em  solid #F95C5C;
     color: white;
     border-radius:0.25em ;
+    cursor: pointer;
 }
 button[class="Checkout"] a{
     text-decoration: none;
