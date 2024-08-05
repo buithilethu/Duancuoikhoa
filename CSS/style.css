@@ -61,6 +61,13 @@ div.Language {
     display: flex;
     justify-content: space-evenly;
 }
+button{
+    border: none;
+    background-color:black;
+    color:white;
+    cursor: pointer;
+    
+}
 select {
     background-color: #000000;
     color: #FAFAFA;
@@ -297,12 +304,4 @@ div.copy{
     font-size: 1em;
     gap:0.375em ;
     opacity: 0.5;
-}
-/* nút chuyển giao  diện sáng tối */
-button{
-    border: none;
-    background-color:black;
-    color:white;
-    cursor: pointer;
-    padding: 0.5em 1em;
 }
