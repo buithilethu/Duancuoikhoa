@@ -1,1 +1,33 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+div.Darkmode{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+div.Darkmode i{
+    position: absolute;
+    color: var(--text-Color);
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+div.Darkmode i.sun{
+    opacity: 0;
+    pointer-events: none;
+}
+div.Darkmode.active i.sun{
+    opacity: 1;
+    pointer-events: auto;
+}
+div.Darkmode.active i.moon{
+    opacity: 0;
+    pointer-events: none;
+}
+div.MainDarkModedark{
+    color:#CCC;
+    background-color:#222;
+
+}
