@@ -1,8 +1,8 @@
-const maindarkmode=document.querySelector("div.MainDarkMode");
+const section=document.querySelector("section");
 modeToggle=document.querySelector("div.Darkmode");
 
 modeToggle.addEventListener("click", ()=> {
     modeToggle.classList.toggle("active");
-    maindarkmode.classList.toggle("dark");
+    section.classList.toggle("dark");
     })
     

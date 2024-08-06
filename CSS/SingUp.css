@@ -83,6 +83,7 @@ div.googleSingin{
     padding: 1em 5.375em;
     border: 0.05em solid;
     gap: 0.625em;
+    
 }
 div.googleSingin button{
     display: flex;
@@ -90,6 +91,7 @@ div.googleSingin button{
     border: none;
     background-color: white;
     cursor: pointer;
+    color: black;
 }
 /* Đăng nhập khi đã có tài khoản */
 div.Singin{
