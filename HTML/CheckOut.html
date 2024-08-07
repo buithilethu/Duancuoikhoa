@@ -78,44 +78,86 @@
                     <p class="home">/</p>
                     <a href="CheckOut.html"><p>Check out</p></a>
                 </div>
-                <div class="BillingDetauls">
-                    <h2>Billing Details</h2>
-                    <form action="" method="post">
-                        <div class="GroupInput">
-                            <div class="Input">
-                                <label>First Name <b>*</b></label>
-                                <input type="text"autofocus>
+                <div class="GroupCheckOut">
+                    <div class="BillingDetauls">
+                        <p>Billing Details</p>
+                        <form action="" method="post">
+                            <div class="GroupInput">
+                                <div class="Input">
+                                    <label>First Name <b>*</b></label>
+                                    <input type="text"autofocus>
+                                </div>
+                                <div class="Input">
+                                    <label>Company Name </label>
+                                    <input type="text">
+                                </div>
+                                <div class="Input">
+                                    <label>Street Address <b>*</b></label>
+                                    <input type="text">
+                                </div>
+                                <div class="Input">
+                                    <label>Apartment, floor, etc. (optional) </label>
+                                    <input type="text">
+                                </div>
+                                <div class="Input">
+                                    <label>Town/City <b>*</b></label>
+                                    <input type="text">
+                                </div>
+                                <div class="Input">
+                                    <label>Phone Number <b>*</b></label>
+                                    <input type="text">
+                                </div>
+                                <div class="Input">
+                                    <label>Email Address <b>*</b></label>
+                                    <input type="email">
+                                </div>
                             </div>
-                            <div class="Input">
-                                <label>Company Name </label>
-                                <input type="text">
+                            <div class="Save">
+                                <input type="checkbox">Save this information for faster check-out next time
                             </div>
-                            <div class="Input">
-                                <label>Street Address <b>*</b></label>
-                                <input type="text">
-                            </div>
-                            <div class="Input">
-                                <label>Apartment, floor, etc. (optional) </label>
-                                <input type="text">
-                            </div>
-                            <div class="Input">
-                                <label>Town/City* <b>*</b></label>
-                                <input type="text">
-                            </div
-                            <div class="Input">
-                                <label>Phone Number* <b>*</b></label>
-                                <input type="text">
-                            </div>
-                            <div class="Input">
-                                <label>Email Address* <b>*</b></label>
-                                <input type="email">
-                            </div>
-                        </div>
-                        <div><input type="checkbox">Save this information for faster check-out next time</div>
-                    </form>
-                </div>
-                <div class="Payment">
-
+                        </form>
+                    </div>
+                    <div class="Payment">
+                        <table>
+                            <tbody>
+                                <tr class="LCD">
+                                    <td class="NameImg"><img src="../Image/Checkout/H1Gamepad.png" alt=""><p>LCD Monitor</p></td>
+                                    <td class="Price">$650</td>
+                                </tr>
+                                <tr class="H1">
+                                    <td class="NameImg"><img src="../Image/Checkout/LCDMonitor.png" alt=""><p>H1 Gamepad</p></td>
+                                    <td class="Price">$1100</td>
+                                </tr>
+                                <tr class="hr1">
+                                    <td class="Name">Subtotal:</td>
+                                    <td class="Price">$1750</td>
+                                </tr>
+                                <tr class="hr2">
+                                    <td class="Name">Shipping:</td>
+                                    <td class="Price">Free</td>
+                                </tr> 
+                                <tr class="hr3">
+                                    <td class="Name">Total:</td>
+                                    <td class="Price">$1750</td>
+                                </tr>
+                                <tr class="bank">
+                                    <td class="bank"><input name="gender" type="radio"value="Bank">Bank</td>
+                                    <td class="img"><img src="../Image/Checkout/bKash.png" alt=""><img src="../Image/Checkout/Visa.png" alt="">
+                                    <img src="../Image/Checkout/MasterCard.png" alt=""><img src="../Image/Checkout/image 33.png" alt=""></td>
+                                </tr>
+                                <tr class="cash">
+                                    <td class="radio"><input name="gender" type="radio" value="Place Order">Cash on delivery</td>
+                                </tr>
+                                <tr class="coupon">
+                                    <td class="coupon"><input type="text"placeholder ="Coupon code"></td>
+                                    <td class="apply"><input type="button"value="Apply Coupon"></td>
+                                </tr>
+                                <tr class="place">
+                                    <td class="place"><input type="submit" value="Place Order"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>

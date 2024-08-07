@@ -74,3 +74,23 @@ section.dark .CartTotal{
     padding: 2em 1em;
     border-radius: 5px;
 }
+section.dark .BillingDetauls form{
+    color: black;
+    background-color: white;
+    padding: 2em;
+    border-radius: 5px;
+}
+
+section.dark .Payment {
+    background-color: white;
+    padding: 2em;
+    color: black;
+    border-radius: 5px;
+}
+
+section.dark .Payment input[value="Apply Coupon"],
+section.dark .Payment input[value="Place Order"]{
+    background-color: #DB4444;
+    color: white;
+   
+}

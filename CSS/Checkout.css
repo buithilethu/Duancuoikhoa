@@ -1,5 +1,9 @@
 div.Checkout{
     padding: 15em 8.75em  8.75em ;
+    display: flex;
+    flex-direction: column;
+    gap:5em;
+    
 }
 div.RoadMapCheckOut{
     display: flex;
@@ -14,3 +18,141 @@ div.RoadMapCheckOut a{
 .home{
     opacity: 0.5;
 }
+div.GroupCheckOut{
+    display: flex;
+    justify-content: space-between;
+}
+div.BillingDetauls{
+    display: flex;
+    flex-direction: column;
+    gap:2.5em;
+}
+div.BillingDetauls p{
+    font-size: 2.25em;
+    line-height: 1.5;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+div.GroupInput{
+    display: flex;
+    flex-direction: column;
+    gap:1.5em;
+}
+div.Input{
+    font-size:1em;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: column;
+    gap:0.0625em;
+}
+div.Input b{
+    color:#DB4444 ;
+}
+div.Save{
+    display: flex;
+    gap:1em;
+    font-size: 1em;
+}
+div.Payment{
+    margin-top: 5em;
+    display: flex;
+    gap:1em;
+    flex-direction: column;
+}
+tr[class="LCD"]{
+    display: flex;
+    align-items: center;
+    gap:13.125em;
+    padding-bottom: 1.875em;
+}
+tr[class="H1"]{
+    display: flex;
+    align-items: center;
+    gap:12.75em;
+    padding-bottom: 1.875em;
+}
+td[class="NameImg"]{
+    display: flex;
+    gap:1.25em;
+    align-items: center;
+}
+tr[class="hr1"]{
+    display: flex;
+    align-items: center;
+    gap:19.1875em;
+    padding-bottom:0.25em ;
+    border-bottom:0.025em solid #000 ;
+}
+tr[class="hr2"]{
+    display: flex;
+    align-items: center;
+    gap:19.625em;
+    padding: 1em 0;
+    border-bottom:0.025em solid #000 ;
+}
+tr[class="hr3"]{
+    display: flex;
+    align-items: center;
+    gap:20.9375em;
+    padding: 1em 0;
+}
+tr[class="bank"]{
+    display: flex;
+    align-items: center;
+    gap:9.6875em;
+    padding-bottom: 1.0625em;
+}
+td[class="bank"]{
+    display: flex;
+    gap:1em;
+    align-items: center;
+    font-size: 1em;
+}
+td[class="img"]{
+    display: flex;
+    gap:0.75em;
+    align-items: center;
+}
+tr[class="cash"]{
+    display: flex;
+    padding-bottom: 1.0625em;
+}
+td[class="radio"]{
+    display: flex;
+    gap:1em;
+    align-items: center;
+    cursor: pointer;
+}
+tr[class="coupon"]{
+    display: flex;
+    gap:1em;
+    padding-bottom: 1.0625em;
+}
+ td[class="coupon"] input{
+  padding: 1em;
+  border: none;
+  border: 0.0625em solid #000;
+ }
+ td[class="apply"] input{
+  padding: 1em;
+  background-color: #DB4444;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+ }
+ tr[class="place"]{
+    display: flex;
+    gap:1em;
+    padding-bottom: 1.0625em;
+ }
+ td[class="place"] input{
+    padding: 1em 3em;
+    background-color: #DB4444;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+ }
+    
