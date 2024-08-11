@@ -80,6 +80,7 @@ div.Input b{
     height:1.3125em;
     width: 1.3125em;
     text-align: center;
+    background-color: #ccc;
   }
   
   /* On mouse-over, add a grey background color */

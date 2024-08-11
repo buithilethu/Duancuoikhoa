@@ -80,6 +80,10 @@ div.GroupSend{
     border-radius: 0.25em;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+div.GroupSend a{
+    text-decoration: none;
+    color:white;
+}
 form{
     display: flex;
     gap: 2em;
