@@ -35,7 +35,6 @@
     console.log('Creating account with', name, emailOrPhone, password);
   });
 // const signupForm = document.querySelector('.FormSignUp form'); // đảm bảo rằng mã chỉ áp dụng cho biểu mẫu đăng ký trong phần tử này.
-
 // signupForm.addEventListener('submit', (event) => {
 //   event.preventDefault(); //ngăn chặn hành vi gửi biểu mẫu mặc định của trình duyệt
 //     //Lấy giá trị từ các trường nhập liệu trong biểu mẫu và loại bỏ khoảng trắng thừa ở đầu và cuối bằng trim().
