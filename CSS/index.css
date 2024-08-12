@@ -876,4 +876,27 @@ div.GroupDownAbout {
     display: flex;
     justify-content: space-around;
 }
-/* >>>>>>> 4866dcaae71ee1c32c2c1fc0647678dd9f598af9 */
+div.Down1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    text-align: center;
+}
+div.Down2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    text-align: center;
+}
+div.Down3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    text-align: center;
+}
