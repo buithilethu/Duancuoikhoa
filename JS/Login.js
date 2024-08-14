@@ -1,59 +1,50 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('#Loginform');
+  const successMessage = document.querySelector('#success-message');
+  
+  if (!form) {
+      console.error('Form element not found.');
+      return;
+  }
 
-    // Lấy tham chiếu đến biểu mẫu đăng nhập
-    const loginForm = document.querySelector('.FormLogin form');
-  
-    // Xử lý sự kiện gửi của biểu mẫu
-    loginForm.addEventListener('submit', function(event) {
-      event.preventDefault(); // Ngăn gửi biểu mẫu mặc định
-  
+  form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Ngăn gửi biểu mẫu
+
       // Lấy giá trị từ các trường nhập liệu
-      const emailOrPhone = document.querySelector('.FormLogin form input[placeholder="Email or Phone Number"]').value.trim();
-      const password = document.querySelector('.FormLogin form input[placeholder="Password"]').value.trim();
-  
-      // Kiểm tra nếu các trường chưa được điền đầy đủ
+      const emailOrPhoneInput = document.querySelector('#loginEmailOrPhone');
+      const passwordInput = document.querySelector('#loginPassword');
+
+      // Kiểm tra nếu các trường nhập liệu có tồn tại
+      if (!emailOrPhoneInput || !passwordInput) {
+          console.error('Input fields not found.');
+          return;
+      }
+
+      const emailOrPhone = emailOrPhoneInput.value.trim();
+      const password = passwordInput.value.trim();
+
       if (!emailOrPhone || !password) {
-        alert('Vui lòng điền vào tất cả các thông tin');
-        return; // Ngừng thực hiện nếu có lỗi
+          alert('Vui lòng điền vào tất cả các thông tin.');
+          return;
       }
-  
-      // Kiểm tra định dạng email hoặc số điện thoại (thực hiện kiểm tra cơ bản)
-      if (!isValidEmail(emailOrPhone) && !isValidPhone(emailOrPhone)) {
-        alert('Vui lòng nhập địa chỉ email hoặc số điện thoại hợp lệ.');
-        return;
+
+      // Lấy dữ liệu người dùng từ localStorage
+      let users = JSON.parse(localStorage.getItem('users')) || [];
+      
+      // Kiểm tra thông tin đăng nhập
+      const user = users.find(user => (user.emailOrPhone === emailOrPhone) && (user.password === password));
+      
+      if (user) {
+          // Đăng nhập thành công
+          successMessage.textContent = 'Đăng nhập thành công!';
+          successMessage.style.display = 'block'; // Hiển thị thông báo
+          setTimeout(function() {
+              window.location.href = 'https://buithilethu.github.io/Duancuoikhoa/'; // Hoặc trang bạn muốn điều hướng sau khi đăng nhập thành công
+          }, 2000); // Đợi 2 giây trước khi chuyển hướng
+      } else {
+          // Đăng nhập thất bại
+          successMessage.textContent = 'Thông tin đăng nhập không chính xác. Vui lòng kiểm tra lại.';
+          successMessage.style.display = 'block'; // Hiển thị thông báo lỗi
       }
-  
-      // Hàm kiểm tra định dạng email
-      function isValidEmail(email) {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(String(email).toLowerCase());
-      }
-  
-      // Hàm kiểm tra định dạng số điện thoại
-      function isValidPhone(phone) {
-        const re = /^[0-9]+$/;
-        return re.test(phone);
-      }
-  
-    //   // Gửi dữ liệu đăng nhập đến máy chủ
-    //   fetch('/login', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify({ emailOrPhone, password })
-    //   })
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     if (data.success) {
-    //       alert('Login successful!');
-    //       // Chuyển hướng đến trang chính hoặc thực hiện hành động khác sau khi đăng nhập thành công
-    //       window.location.href = '/Duancuoikhoa/HTML/E-CommerceHomePage.html'; // Ví dụ: chuyển hướng đến trang bảng điều khiển
-    //     } else {
-    //       alert('Login failed: ' + 'src="Duancuoikhoa/HTML/404Error.html');
-    //     }
-    //   })
-    //   .catch(error => {
-    //     console.error('Error during login:', error);
-    //     alert('An error occurred. Please try again later.');
-    //   });
-     });
+  });
+});

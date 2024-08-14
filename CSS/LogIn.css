@@ -81,4 +81,8 @@
             text-decoration: none;
             color: #F95C5C;
         }
-   
+        #success-message {
+            display: none; /* Ẩn thông báo mặc định */
+            color: green;
+            margin-top: 10px;
+        }
