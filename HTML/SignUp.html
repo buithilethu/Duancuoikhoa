@@ -72,20 +72,21 @@
                     <div class="ImageSignUp">
                         <img src="../Image/SignUp/phone1.png" alt="">
                     </div>
-                    <form action=" " method="post">
+                    <form id="Singupform " method="post">
                         <div class="GroupTextSign">
                             <div class="TextS1">Create an account</div>
                             <div class="TextS2">Enter your details below</div>
                         </div>
                         <div class="GroupBtnSign">
                             <div class="GroupInput">
-                                <input type="text" placeholder="Name"autofocus>
-                                <input type="text" placeholder="Email or Phone Number">
-                                <input type="password" placeholder="Password">
+                                <input type="text" id="name" placeholder="Name"autofocus>
+                                <input type="text" id="emailorphone" placeholder="Email or Phone Number">
+                                <input type="password" id="password" placeholder="Password">
+                                <input type="password"id="Confirmpassword" placeholder="Confirm Password">
                             </div>
                             <div class="Btn">
                                 <div class="BtnCreate">
-                                    <button>Create Account</button>
+                                    <button type="submit">Create Account</button>
                                 </div>
                                 <div class="GroupDown">
                                     <div class="googleSingin">
@@ -98,6 +99,7 @@
                             </div>
                         </div>
                     </form>
+                    <div id="success-message" style="display: none; color: green;"></div>
                 </div>
             </section>
             <div class="Footer">
