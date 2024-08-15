@@ -129,11 +129,12 @@ button[type="submit"]{
     border-radius: 0.25em;
     cursor: pointer;
 }
-button[type="reset"]{
+button[type="button"]{
     border: none;
-    background-color: white;
+    background-color:white;
     padding: 1em 2em;
     cursor: pointer;
+    color: black;
 }
 div.Password{
     display: flex;
