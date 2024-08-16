@@ -10,17 +10,6 @@ div.Contain{
     display: flex;
     flex-direction: column;
 }
-/* @media (max-width: 768px) {
-    .container {
-      padding: 10px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      padding: 20px;
-    }
-  } */
 /* E-Commerce HomePage */
 
 div.GroupHeader{
@@ -164,7 +153,6 @@ div.Footer hr{
 }
 /* Footer Top */
 div.FooterTop{
-    padding: 0 8.5em;
     padding-top: 5.625em;
     padding-bottom: 4.375em;
     display: flex;
