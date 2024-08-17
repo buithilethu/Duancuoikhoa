@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1023px) and (min-width: 431px) {
+@media only screen and (max-width: 1024px) and (min-width: 431px) {
   /* index.html */
 
   /* About.html */
@@ -6,7 +6,22 @@
   /* Cart.html */
 
   /* SingUp.html */
-
+  div.MainLogin{
+    display:none;
+  }
+  div.MainLogin{
+    display: block;
+  }
+  div.GroupHeader{
+    display:none;
+  }
+  div.GroupHeader{
+    display: block;
+    position: fixed;
+    top: 0;
+    background-color: white;
+  }
+  
   /* LogIn.html */
 
   /* MyAccount.html */
@@ -16,6 +31,7 @@
   /* Checkout.html */
 
 }
+
 
 
 
