@@ -99,7 +99,11 @@ div.Singin{
     justify-content: center;
     gap: 1em;
 }
-a{
+div.Singin a{
+    color: #f03535;
+    text-decoration: none;
+}
+div.googleSingin a{
     color: #f03535;
     text-decoration: none;
 }

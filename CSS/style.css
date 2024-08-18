@@ -294,3 +294,6 @@ div.copy{
     gap:0.375em ;
     opacity: 0.5;
 }
+div.menuNav {
+    display: none;
+}

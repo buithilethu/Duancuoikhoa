@@ -1,4 +1,38 @@
-@media only screen and (max-width: 1024px) and (min-width: 431px) {
+@media only screen and (max-width: 1023px) and (min-width: 431px) {
+  div.Menu{
+    display: none;
+  }
+  div.Exclusivelogo{
+    display:none;
+  }
+  div.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  div.menuNav{
+    display:block;
+    position: relative;
+  }
+  .bi-card-list{
+    font-size: 2.5em;
+  }
+  div.menuNav div.Menu{
+    position: absolute;
+  }
+  div.menuNav:hover div.Menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em ;
+    padding-right: 2em ;
+    padding-top:0.625em ;
+    padding-bottom:1em ;
+    background-color:rgb(203, 201, 201);
+    gap:0.625em;
+  }
+  div.menuNav:hover div.Menu a{
+    opacity: 1;
+  }
   /* index.html */
 
   /* About.html */
@@ -6,21 +40,6 @@
   /* Cart.html */
 
   /* SingUp.html */
-  div.MainLogin{
-    display:none;
-  }
-  div.MainLogin{
-    display: block;
-  }
-  div.GroupHeader{
-    display:none;
-  }
-  div.GroupHeader{
-    display: block;
-    position: fixed;
-    top: 0;
-    background-color: white;
-  }
   
   /* LogIn.html */
 
