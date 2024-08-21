@@ -3,6 +3,7 @@
     padding: 15em 8.75em  8.75em ;
 }
 div.banner_group {
+    margin-left: 130px;
     padding-top: 40px;
     display: flex;
     justify-content: space-between;
@@ -56,6 +57,7 @@ div.shop_now a {
 div.today {                        /* Mục chính*/
     display: flex;
     padding-top: 130px;
+    padding-left: 130px;
     justify-content: start;
     flex-direction: column;
     gap: 24px;
@@ -63,6 +65,7 @@ div.today {                        /* Mục chính*/
 div.categories {
     display: flex;
     padding-top: 140px;
+    padding-left: 130px;
     justify-content: start;
     flex-direction: column;
     gap: 24px;
@@ -70,6 +73,7 @@ div.categories {
 div.this_month {
     display: flex;
     padding-top: 140px;
+    padding-left: 130px;
     justify-content: start;
     flex-direction: column;
     gap: 24px;
@@ -77,6 +81,7 @@ div.this_month {
 div.our_products {
     display: flex;
     padding-top: 140px;
+    padding-left: 130px;
     justify-content: start;
     flex-direction: column;
     gap: 24px;
@@ -418,6 +423,7 @@ div.shop_now a {
 div.today {                       
     display: flex;
     padding-top: 130px;
+    padding-left: 130px;
     justify-content: start;
     flex-direction: column;
     gap: 24px;
@@ -425,6 +431,7 @@ div.today {
 div.categories {
     display: flex;
     padding-top: 140px;
+    padding-left: 130px;
     justify-content: start;
     flex-direction: column;
     gap: 24px;
@@ -432,6 +439,7 @@ div.categories {
 div.this_month {
     display: flex;
     padding-top: 140px;
+    padding-left: 130px;
     justify-content: start;
     flex-direction: column;
     gap: 24px;
@@ -439,6 +447,7 @@ div.this_month {
 div.our_products {
     display: flex;
     padding-top: 140px;
+    padding-left: 130px;
     justify-content: start;
     flex-direction: column;
     gap: 24px;
