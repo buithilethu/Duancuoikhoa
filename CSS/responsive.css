@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1023px) and (min-width: 431px) {
+@media only screen and (max-width: 1025px) and (min-width: 431px) {
   div.Menu{
     display: none;
   }
@@ -33,6 +33,16 @@
   div.menuNav:hover div.Menu a{
     opacity: 1;
   }
+  div.GroupHeader{
+    display: none;
+  }
+  div.GroupHeader{
+    display: block;
+    position: fixed;
+    top: 0;
+    background-color: white;
+  }
+  
   /* index.html */
 
   /* About.html */
@@ -41,8 +51,35 @@
 
   /* SingUp.html */
   
+  div.ImageSignUp{
+    display: none;
+  }
+  div.ImageSignUp{
+    display: block;
+    padding: 10%;
+  }
+  #Singupform{
+    display: none;
+  }
+  #Singupform{
+    display: block;
+    margin-left: 35%;
+  }
   /* LogIn.html */
-
+  div.ImagePhone{
+    display: none;
+  }
+  div.ImagePhone{
+    display: block;
+    padding: 10%;
+  }
+  #Loginform{
+    display: none;
+  }
+  #Loginform{
+    display: block;
+    margin-left: 40%;
+  }
   /* MyAccount.html */
 
   /* Contact.html */
