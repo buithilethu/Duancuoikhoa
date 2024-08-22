@@ -42,6 +42,16 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
+        // Lấy danh sách người dùng từ localStorage
+        let users = JSON.parse(localStorage.getItem('users')) || [];
+
+        // Kiểm tra xem email hoặc số điện thoại đã tồn tại chưa
+        const userExists = users.some(user => user.emailOrPhone === emailOrPhone);
+        if (userExists) {
+            alert('Tài khoản với email hoặc số điện thoại này đã tồn tại.');
+            return;
+        }
+
         // Lưu thông tin người dùng vào localStorage
         const userData = {
             name: name,
@@ -49,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
             password: password
         };
 
-        let users = JSON.parse(localStorage.getItem('users')) || [];
         users.push(userData);
         localStorage.setItem('users', JSON.stringify(users));
 
