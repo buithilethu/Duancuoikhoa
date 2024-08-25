@@ -46,7 +46,13 @@
   /* index.html */
 
   /* About.html */
-
+  div.About{
+    display: none;
+  }
+  div.About{
+    display: block;
+   
+  }
   /* Cart.html */
 
   /* SingUp.html */
@@ -83,9 +89,76 @@
   /* MyAccount.html */
 
   /* Contact.html */
-  
+  div.Contact{
+    display: none;
+  }
+  div.Contact{
+    display: block;
+    padding-top:22em ;
+  }
+  div.Content{
+    display: none;
+  }
+  div.Content{
+    display: block;
+    padding-top:5em ;
+  }
+  div.GroupSend{
+    display: none;
+  }
+  div.GroupSend{
+    display: block;
+    margin-top: 5em;
+  }
+  div.GroupInfo{
+    display: none;
+  }
+  div.GroupInfo{
+    display: block;
+  }
+  div.GroupInfo input{
+    width: 60%;
+    margin-bottom: 2em;
+    margin-left: 15%;
+  }
+  div.GroupInfo span{
+    font-weight: bold;
+    margin-left: 1em;
+  }
   /* Checkout.html */
-
+  div.Checkout{
+    display: none;
+  }
+  div.Checkout{
+    display: block;
+    padding:20em 5em  5em;
+  }
+  div.BillingDetauls{
+    display: none;
+  }
+  div.BillingDetauls{
+    display: block;
+    margin-top: 5%;
+    border: 2px solid #000;
+    padding: 15px;
+  }
+  div.GroupCheckOut{
+    display: none;
+  }
+  div.GroupCheckOut{
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  div.Payment{
+    display: none;
+  }
+  div.Payment{
+    display: block;
+    margin-top: 5%;
+    border: 2px solid #000;
+    padding: 30px;
+  }
 }
 
 
