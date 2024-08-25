@@ -5,8 +5,14 @@ div.TopProducts div.title {
     display: flex;
     justify-content: space-between;
 }
+
+div.title div.container button{
+    background-color: #DB4444;
+    color: white;
+    font-size: 1em;
+}
 div.title div.container :hover{
-    background-color:#DB4444;
+    background-color:black;
 }
 div.title div.container button{
     border: none;
@@ -31,9 +37,12 @@ div.today_title_wl div.container {
     background-color: #DB4444;
     border-radius: 4px;
 }
-div.today_title_wl p{
-    color: black;
-    font-size: 20px;
+div.today_title_wl b{
+    font-size:1.5em ;
+}
+div.bsp{
+    display: flex;
+    justify-content: flex-end;
 }
 div.products_wl {                          
     display: flex;
