@@ -586,8 +586,8 @@ div.mid_banner {
 }
 div.mid_banner div.container {
     display: flex;
-    justify-content: space-between;
     background-color: black;
+    margin-left: 8em;
 }
 div.left_banner {
     padding: 70px 0 60px 55px;
