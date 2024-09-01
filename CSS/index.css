@@ -501,6 +501,10 @@ div.discount_container {
     background-color: #DB4444;
     border-radius: 4px;
 }
+div.btt_view{
+    display: flex;
+    align-items: flex-end;
+}
 div.btt_view div.container {
     background-color:#DB4444;
     width: fit-content;
