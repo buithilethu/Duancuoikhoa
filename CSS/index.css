@@ -676,6 +676,7 @@ div.today div.tank {
     padding-top: 60px;
     display: flex;
     justify-content: space-between;
+    margin-left: 8em;
 }
 div.tank div.box_left {
     background-color: black;
