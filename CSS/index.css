@@ -2,12 +2,6 @@
  div.MainHomePage {
     padding: 15em 8.75em  8.75em ;
 }
-div.banner_group {
-    margin-left: 130px;
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-between;
-}
 div.left_board {
     padding-right: 50px;
     display: flex;
@@ -53,30 +47,6 @@ div.shop_now {
 div.shop_now a {
     font-size: 16px;
     font-weight: 300px;
-}
-div.today {                        /* Mục chính*/
-    display: flex;
-    padding-top: 130px;
-    padding-left: 130px;
-    justify-content: start;
-    flex-direction: column;
-    gap: 24px;
-}
-div.categories {
-    display: flex;
-    padding-top: 140px;
-    padding-left: 130px;
-    justify-content: start;
-    flex-direction: column;
-    gap: 24px;
-}
-div.this_month {
-    display: flex;
-    padding-top: 140px;
-    padding-left: 130px;
-    justify-content: start;
-    flex-direction: column;
-    gap: 24px;
 }
 div.our_products {
     display: flex;
@@ -364,9 +334,6 @@ div.right_banner {
 }
 
 /* ======== */
-div.MainHomePage {
-    padding: 15em 8.75em  8.75em ;
-}
 div.banner_group {
     margin-left: 130px;
     padding-top: 40px;
