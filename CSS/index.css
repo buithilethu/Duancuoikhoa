@@ -1,6 +1,7 @@
  /* HEAD */
  div.MainHomePage {
-    padding: 15em 0em ;
+    padding-top: 15em ;
+    padding-right: 8.75em;
 }
 div.left_board {
     padding-right: 50px;
@@ -173,12 +174,6 @@ div.today div.btt_view {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-div.btt_view div.container {
-    background-color:#DB4444;
-    width: fit-content;
-    padding: 20px 40px 20px 40px;
-    border-radius: 4px;
 }
 div.btt_view div.container button {
     border: none;
