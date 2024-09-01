@@ -51,17 +51,6 @@ div.shop_now a {
 div.today_title p {
     font-weight: bold;
 }
-div.today_title div.container {
-    margin: 0;
-    width: 20px;
-    height: 40px;
-    background-color: #DB4444;
-    border-radius: 4px;
-}
-div.today_title p {
-    color: #DB4444;
-    font-size: 16px;
-}
 div.flash_sales h1 {
     font-size: 36px;
 }
@@ -200,10 +189,6 @@ div.btt_view div.container button {
 div.btt_view div.container:hover {
     background-color:#000000;
 }
-div.bbc {
-    display: flex;
-    justify-content: space-between;
-}
 div.bbc div.btt {
     display: flex;
     align-items: center;
@@ -219,10 +204,6 @@ div.btt div.circle {
 }
 div.btt div.circle:hover {
    background-color: #DB4444;
-}
-div.categories div.list {
-    display: flex;
-    justify-content: space-between;
 }
 div.list div.box {
     padding: 25px 65px 25px 65px;
@@ -260,18 +241,6 @@ div.bsp_container button {
 div.bsp div.bsp_container:hover {
     background-color: #000000;
 }
-div.mid_banner div.container {
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-}
-div.left_banner {
-    padding: 70px 0 60px 55px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    color: white;
-}
 div.left_banner p {
     font-size: 16px;
     color: #00FF66;
@@ -279,16 +248,6 @@ div.left_banner p {
 div.left_banner h1 {
     font-size: 42px;
     font-weight: bolder;
-}
-div.left_banner div.btt {
-    display: flex;
-    justify-content: start;
-}
-div.btt div.btt_container {
-    padding: 20px 40px 20px 40px;
-    background-color: #00FF66;
-    display: flex;
-    justify-content: start;
 }
 div.btt div.btt_container button {
     border: none;
@@ -298,9 +257,6 @@ div.btt div.btt_container button {
 }
 div.btt div.btt_container:hover {
     background-color: #DB4444;
-}
-div.right_banner {
-    padding: 40px 30px 40px 20px
 }
 
 /* ======== */
@@ -549,12 +505,6 @@ div.discount_container {
     color: white;
     background-color: #DB4444;
     border-radius: 4px;
-}
-div.btt_view {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 div.btt_view div.container {
     background-color:#DB4444;
