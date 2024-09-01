@@ -48,19 +48,6 @@ div.shop_now a {
     font-size: 16px;
     font-weight: 300px;
 }
-div.our_products {
-    display: flex;
-    padding-top: 140px;
-    padding-left: 130px;
-    justify-content: start;
-    flex-direction: column;
-    gap: 24px;
-}
-div.today_title {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
 div.today_title p {
     font-weight: bold;
 }
@@ -83,18 +70,9 @@ div.bbc h1 {
 }     
 div.bsp h1 {
     font-size: 36px;
-}          
-/* PRODUCTS  */
-div.products {                          
-    display: flex;
-    margin-top: 40px;
-    justify-content: space-between;
-}
+}   
  /* PRODUCTS LAYOUT  */
 div.products div.box {               
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25)
 }
 /* Each product */
@@ -268,11 +246,6 @@ div.list div.box:hover {
 div.list div.box_L:hover {
     background-color: #DB4444;
 }
-div.this_month div.bsp {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 div.bsp div.bsp_container {
     padding: 20px 50px 20px 50px;
     background-color: #DB4444;
@@ -286,9 +259,6 @@ div.bsp_container button {
 }
 div.bsp div.bsp_container:hover {
     background-color: #000000;
-}
-div.mid_banner {
-    margin: 130px 130px 0 130px;
 }
 div.mid_banner div.container {
     display: flex;
