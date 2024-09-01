@@ -503,7 +503,9 @@ div.discount_container {
 }
 div.btt_view{
     display: flex;
-    align-items: flex-end;
+    flex-direction: row;
+    padding-top: 2em;
+    justify-content: center;
 }
 div.btt_view div.container {
     background-color:#DB4444;
