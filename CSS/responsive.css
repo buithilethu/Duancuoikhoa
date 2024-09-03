@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1025px) and (min-width: 431px) {
+@media only screen and (max-width: 1024px) and (min-width: 431px) {
   div.Menu{
     display: none;
   }
@@ -42,7 +42,17 @@
     top: 0;
     background-color: white;
   }
+  div.Footer{
+    display: none;
+  }
+  div.Footer{
+    display: flex;
+  }
+  div.FooterTop{
+    display: flex;
   
+  
+  }
   /* index.html */
 
   /* About.html */
@@ -50,12 +60,12 @@
     display: none;
   }
   div.About{
-    display: block;
+    display: flex;
   }
   div.GroupTop{
     display:flex;
-    margin: 7em 0em;
-    gap: 4em;
+    margin: 1em 0em;
+    gap: 6em;
   }
   div.one{
     padding: 3em 4em;
@@ -69,11 +79,31 @@
   div.four{
     padding: 3em 4em;
   }
-  div.GroupMiddle{
-    display: flex;
-    
+  div.GroupAvatar{
+    display: none;
   }
-
+  div.GroupAvatar{
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    justify-content: space-around;
+  }
+  div.GroupGlide{
+    display: none;
+  }
+  div.GroupGlide{
+    display: flex;
+    gap: 1em;
+    margin-left: 25em;
+  }
+  div.GroupDownAbout{
+    display: none;
+  }
+  div.GroupDownAbout{
+    display: block;
+    margin-left: 25em;
+   
+  }
   /* Cart.html */
 
   /* SingUp.html */

@@ -144,7 +144,7 @@ div.Footer{
     background-color: #000000;
     color:#FFFFFF;
     display: flex;
-    width: auto;
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
 }

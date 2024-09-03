@@ -3,8 +3,7 @@ div.About{
     padding-left: 8.75em;
     display: flex;
     flex-direction: column;
-    gap: 8.125em;
-    
+    gap: 5em;
 }
 div.GroupRoadmapAbout{
     display: flex;
@@ -114,19 +113,19 @@ div.four{
     border-radius:0.25em;
 }
 div.four:hover{
-    background-color:black;
+    background-color:#DB4444;
     color: white;
 }
 div.one:hover{
-    background-color: black;
+    background-color: #DB4444;
     color: white;
 }
 div.third:hover{
-    background-color:black;
+    background-color:#DB4444;
     color: white;
 }
 div.two:hover{
-    background-color: black;
+    background-color:#DB4444;
     color: white;
 }
 div.GroupMiddle{
