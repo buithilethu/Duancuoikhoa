@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Lấy giá trị từ các trường nhập liệu
         const emailOrPhoneInput = document.querySelector('#loginEmailOrPhone');
         const passwordInput = document.querySelector('#loginPassword');
-  
         // Kiểm tra nếu các trường nhập liệu có tồn tại
         if (!emailOrPhoneInput || !passwordInput) {
             console.error('Input fields not found.');
