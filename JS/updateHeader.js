@@ -1,14 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const userIcon = document.querySelector('#user-icon');
+// Hàm kiểm tra trạng thái đăng nhập (thay đổi theo cách bạn lưu trữ trạng thái đăng nhập)
+function isLoggedIn() {
+    // Ví dụ: giả định trạng thái đăng nhập lưu trữ trong localStorage
+    return localStorage.getItem('loggedIn') === 'true';
+}
 
-    // Kiểm tra nếu có người dùng đang đăng nhập
-    if (localStorage.getItem('loggedIn') === 'true') {
-        if (userIcon) {
-            userIcon.style.display = 'block'; // Hiển thị biểu tượng người dùng
-        }
+// Hàm để ẩn hoặc hiện phần tử user-icon
+function updateUserIconVisibility() {
+    const userIcon = document.querySelector('.user-icon');
+    if (isLoggedIn()) {
+        userIcon.classList.remove('hidden');
     } else {
-        if (userIcon) {
-            userIcon.style.display = 'none'; // Ẩn biểu tượng người dùng
-        }
+        userIcon.classList.add('hidden');
     }
-});
+}
+
+// Gọi hàm để cập nhật trạng thái khi trang tải
+document.addEventListener('DOMContentLoaded', updateUserIconVisibility);

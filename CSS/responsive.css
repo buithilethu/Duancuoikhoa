@@ -54,8 +54,24 @@
   }
   div.GroupTop{
     display:flex;
-    margin: 7em 7em 0em 7em;
-    padding: 2em;
+    margin: 7em 0em;
+    gap: 4em;
+  }
+  div.one{
+    padding: 3em 4em;
+  }
+  div.two{
+    padding: 2.5em 4em;
+  }
+  div.third{
+    padding: 3em 4em;
+  }
+  div.four{
+    padding: 3em 4em;
+  }
+  div.GroupMiddle{
+    display: flex;
+    
   }
 
   /* Cart.html */

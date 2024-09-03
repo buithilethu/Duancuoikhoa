@@ -297,3 +297,7 @@ div.copy{
 div.menuNav {
     display: none;
 }
+/* Lớp để ẩn phần tử .user-icon */
+.hidden {
+    display: none;
+}

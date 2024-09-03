@@ -87,9 +87,7 @@ div.two{
     padding:2em  2.1875em;
     gap: 1.675em;
     border-radius:0.25em;
-    background-color: #DB4444;
     text-align: center;
-    color: white;
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.19);
 } 
 div.third{
@@ -114,6 +112,22 @@ div.four{
     text-align: center;
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius:0.25em;
+}
+div.four:hover{
+    background-color:black;
+    color: white;
+}
+div.one:hover{
+    background-color: black;
+    color: white;
+}
+div.third:hover{
+    background-color:black;
+    color: white;
+}
+div.two:hover{
+    background-color: black;
+    color: white;
 }
 div.GroupMiddle{
     padding-right: 8.75em;
