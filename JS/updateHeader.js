@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('userIcon:', userIcon); // Xem nếu phần tử tồn tại
         if (userIcon) {
             if (isLoggedIn()) {
-                userIcon.classList.remove('hidden');
+                userIcon.classList.remove('.user-icon');
             } else {
-                userIcon.classList.add('hidden');
+                userIcon.classList.add('.user-icon');
             }
         } else {
             console.error('Không tìm thấy phần tử với lớp .user-icon.');
