@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="/Duancuoikhoa/CSS/Shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Duancuoikhoa/CSS/style.css">
+    <link rel="stylesheet" href="/Duancuoikhoa/CSS/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/Duancuoikhoa/CSS/Darkmode.css">
+    <link rel="icon" href="/Duancuoikhoa/Image/shopping (3)-fotor-20240811172952.png" type="image/gif" sizes="32x32" >
+    <link rel="stylesheet" href="/Duancuoikhoa/CSS/responsive.css">
+</head>
+<body>
+    <div class="Contain">
+        <div class="GroupHeader">
+            <div class="TopHeader">
+                <div class="GroupTopHeader">
+                    <div class="SummerSale">
+                        <div class="Summer">
+                            <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p>
+                        </div>
+                        <div class="Shopnow">
+                            <a href="../index.html">ShopNow</a>
+                        </div>
+                    </div>
+                    <div class="Language">
+                        <div class="Darkmode">
+                            <i class="bi bi-moon-fill moon"></i>
+                            <i class="bi bi-brightness-high-fill sun"></i>
+                        </div>
+                        <select name="Language" id="Language">
+                            <option value="English">English</option>
+                            <option value="Vietnamese">Vietnamese</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="Header"> 
+                <div class="GroupExclusive">
+                    <div class="Exclusivelogo">
+                        <p>Exclusive</p>
+                    </div>
+                    <div class="menuNav">
+                        <i class="bi bi-card-list"></i>
+                        <div class="Menu">
+                            <a href="../index.html">Home</a>
+                            <a href="Contact.html">Contact</a>
+                            <a href="About.html">About</a>
+                            <a href="SignUp.html">Sign Up</a>
+                        </div>
+                    </div>
+                    <div class="Menu">
+                        <a href="../index.html">Home</a>
+                        <a href="Contact.html">Contact</a>
+                        <a href="About.html">About</a>
+                        <a href="SignUp.html">Sign Up</a>
+                    </div>
+                </div>
+                <div class="GroupSearchLogo">
+                    <div class="GroupSearch">
+                        <input type="text" placeholder="What are you looking for?">
+                        <a href="#"><img src="../Image/Header/Search.png" alt=""></a>
+                    </div>
+                    <div class="GroupLogo">
+                        <a href="../HTML/Wishlist.html"><img src="../Image/Header/Tym.png" alt=""></a>
+                        <a href="Cart.html"><img src="../Image/Header/Shopping.png" alt=""></a>
+                        <div class="user-icon"><a href="MyAccount.html"><img src="../Image/MyAccount/user.png" alt=""></a></div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div style="background-color:white"><hr></div>
+        </div>
+        <section>
+            <div class="Shop">
+                <div class="container">
+                    <form class="filter">
+                        <div class="item">
+                            <label for="data-category">Categories:</label>
+                            <select name="data-category" id="data-category">
+                                <option value="">---</option>
+                                <option value="Entertainment">Entertainment</option>
+                                <option value="Clothes">Clothes</option>
+                                <option value="Pet">Pet</option>
+                                <option value="Beauty Product">Beauty Product</option>
+                                <option value="Furniture">Furniture</option>
+                                <option value="Gadget">Gadget</option>
+                            </select>
+                        </div>
+                        <div class="item">
+                            <label for="data-color">Color:</label>
+                            <select name="data-color" id="data-color">
+                                <option value="">---</option>
+                                <option value="White">White</option>
+                                <option value="Black">Black</option>
+                                <option value="Red">Red</option>
+                                <option value="Green">Green</option>
+                                <option value="Pink">Pink</option>
+                                <option value="Brown">Brown</option>
+                                <option value="Purple">Purple</option>
+                            </select>
+                        </div>
+                        <div class="item">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="item">
+                            <label for="data-price-min">Min Price:</label>
+                            <input type="number" name="data-price-min" id="data-price-min">
+                        </div>
+                        <div class="item">
+                            <label for="data-price-max">Max Price:</label>
+                            <input type="number" name="data-price-max" id="data-price-max">
+                        </div>
+                        <div class="item_submit">
+                            <button type="button" id="sorting">Search</button>
+                        </div>
+                    </form>
+                    <div class="countResults">
+                        <p>Found <span id="count">12</span> results</p>
+                    </div>
+                    <div class="list">
+                        <div class="item" data-category="Entertainment" data-color="Red" data-price="120">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/game_pad_pd1.png" alt="">
+                                    <div class="container">
+                                        <p>-40%</p>
+                                    </div>
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">HAVIT HV-G92 Gamepad</div>
+                                <div class="payment">
+                                    <div class="act_cost">$120</div>
+                                    <div class="init_cost">$160</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                    </div>
+                                    <div class="number">(88)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-category="Entertainment" data-color="Black" data-price="960">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/keyboard_pd2.png" alt="">
+                                    <div class="container">
+                                        <p>-35%</p>
+                                    </div>
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">AK-900 Wired Keyboard</div>
+                                <div class="payment">
+                                    <div class="act_cost">$960</div>
+                                    <div class="init_cost">$1160</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/empty-star.png" alt="">
+                                    </div>
+                                    <div class="number">(75)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-category="Entertainment" data-color="Black" data-price="370">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/monitor_pd3.png" alt="">
+                                    <div class="container">
+                                        <p>-30%</p>
+                                    </div>
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">IPS LCD Gaming Monitor</div>
+                                <div class="payment">
+                                    <div class="act_cost">$370</div>
+                                    <div class="init_cost">$400</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                    </div>
+                                    <div class="number">(99)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-category="Furniture" data-color="Brown" data-price="375">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/chair_pd4.png" alt="">
+                                    <div class="container">
+                                        <p>-25%</p>
+                                    </div>
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">S-Series Comfort Chair</div>
+                                <div class="payment">
+                                    <div class="act_cost">$375</div>
+                                    <div class="init_cost">$400</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                    </div>
+                                    <div class="number">(99)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-category="Clothes" data-color="Pink" data-price="260">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/coat_sc1.png" alt="">
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">The north coat</div>
+                                <div class="payment">
+                                    <div class="act_cost">$260</div>
+                                    <div class="init_cost">$360</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                    </div>
+                                    <div class="number">(65)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-category="Fashion" data-color="Brown" data-price="960">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/bag_sc2.png" alt="">
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">Gucci duffle bag</div>
+                                <div class="payment">
+                                    <div class="act_cost">$960</div>
+                                    <div class="init_cost">$1160</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/half-star.png" alt="">
+                                    </div>
+                                    <div class="number">(65)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-category="Entertainment" data-color="Black" data-price="160">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/cooler_sc3.png" alt="">
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">RGB liquid CPU Cooler</div>
+                                <div class="payment">
+                                    <div class="act_cost">$160</div>
+                                    <div class="init_cost">$170</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/half-star.png" alt="">
+                                    </div>
+                                    <div class="number">(65)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-category="Furniture" data-color="Brown" data-price="360">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/bookshelf_sc4.png" alt="">
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">Small BookSelf</div>
+                                <div class="payment">
+                                    <div class="act_cost">$360</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                    </div>
+                                    <div class="number">(65)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-category="Pet" data-color="Purple" data-price="100">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/food_dog_ff1.png" alt="">
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">Breed Dry Dog Food</div>
+                                <div class="payment">
+                                    <div class="act_cost">$100</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/empty-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/empty-star.png" alt="">
+                                    </div>
+                                    <div class="number">(35)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-category="Gadget" data-color="Black" data-price="360">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/camera_ff2.png" alt="">
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">CANON EOS DSLR Camera</div>
+                                <div class="payment">
+                                    <div class="act_cost">$360</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/empty-star.png" alt="">
+                                    </div>
+                                    <div class="number">(35)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-category="Entertainment" data-color="Black" data-price="700">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/laptop_ff3.png" alt="">
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">ASUS FHD Gaming Laptop</div>
+                                <div class="payment">
+                                    <div class="act_cost">$700</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                    </div>
+                                    <div class="number">(325)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-category="Beauty Product" data-color="Black" data-price="500">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/curology_ff4.png" alt="">
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">Curology Product Set </div>
+                                <div class="payment">
+                                    <div class="act_cost">$500</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/empty-star.png" alt="">
+                                    </div>
+                                    <div class="number">(145)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-category="Gadget" data-color="Red" data-price="960">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/car_ff5.png" alt="">
+                                    <div class="container_nw">
+                                        <p>NEW</p>
+                                    </div>
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">Kids Electric Car</div>
+                                <div class="payment">
+                                    <div class="act_cost">$960</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                    </div>
+                                    <div class="number">(65)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-category="Fashion" data-color="Green" data-price="1160">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/shoes_ff6.png" alt="">
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">Jr. Zoom Soccer Cleats</div>
+                                <div class="payment">
+                                    <div class="act_cost">$1160</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                    </div>
+                                    <div class="number">(35)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-category="Entertainment" data-color="Black" data-price="660">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/gamepad_ff7.png" alt="">
+                                    <div class="container_nw">
+                                        <p>NEW</p>
+                                    </div>
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">GP11 Shooter USB Gamepad</div>
+                                <div class="payment">
+                                    <div class="act_cost">$660</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/half-star.png" alt="">
+                                    </div>
+                                    <div class="number">(55)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-category="Clothes" data-color="Green" data-price="660">
+                            <div class="up">
+                                <div class="picture">
+                                    <img src="./../Image/E-Commerce-HomePage/jacket_ff8.png" alt="">
+                                    <div class="emoji">
+                                        <img src="./../Image/E-Commerce-HomePage/love_icon.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/vision_icon.png" alt="">
+                                    </div>
+                                    <div class="active">
+                                        <button id="hidden_button">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="down">
+                                <div class="name" style="font-weight: bold;">Quilted Satin Jacket</div>
+                                <div class="payment">
+                                    <div class="act_cost">$660</div>
+                                </div>
+                                <div class="vote">
+                                    <div class="star">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/full-star.png" alt="">
+                                        <img src="./../Image/E-Commerce-HomePage/half-star.png" alt="">
+                                    </div>
+                                    <div class="number">(55)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="Footer">
+            <div class="FooterTop">
+                <div class="Exclusive">
+                    <div class="GroupText1">
+                            <h2>Exclusive</h2>
+                            <h3>Subscribe</h3>
+                        <div class="text3">Get 10% off your first order</div>
+                    </div>
+                    <div class="Send">
+                        <input type="text" placeholder="Enter your email">
+                        <a href="#"><img src="../Image/Footer/Send.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="Support">
+                    <h3>Support</h3>
+                    <div class="GroupText2">
+                        <p>111 Bijoy sarani, Dhaka,<br>DH 1515, Bangladesh.</p>
+                        <p>exclusive@gmail.com</p>
+                        <p>+88015-88888-9999</p>
+                    </div>
+                </div>
+                <div class="Account">
+                    <h3>Accout</h3>
+                    <div class="BtnAccount">
+                        <a href="MyAccount.html">My Account</a>
+                        <a href="LogIn.html">Login/Register</a>
+                        <a href="Cart.html">Cart</a>
+                        <a href="Wishlist.html">Wishlist</a>
+                        <a href="#">Shop</a>
+                    </div>
+                </div>
+                <div class="QuickLink">
+                    <h3>Quick Link</h3>
+                    <div class="BtnQuickLinks">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms Of Use</a>
+                        <a href="#">FAQ</a>
+                        <a href="Contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="DownloadApp">
+                    <div class="GroupDown">
+                        <h3>Download App</h3>
+                        <div class="GroupText3">
+                            <div class="textApp">
+                                <p>Save $3 with App New User Only</p>
+                            </div>
+                            <div class="GroupImage">
+                                <div class="Qrcode"><img src="../Image/Footer/Qrcode.png" alt=""></div>
+                                <div class="ImageApp">
+                                    <a href="https://play.google.com/store/games?device=windows"><img src="../Image/Footer/GooglePlay.png" alt=""> </a>
+                                    <a href="https://www.apple.com/app-store/"><img src="../Image/Footer/Appstore.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="GroupIcon">
+                        <a href="https://www.facebook.com/"><img src="../Image/Footer/Facebook.png" alt=""></a>
+                        <a href="https://x.com/"><img src="../Image/Footer/Twitter.png" alt=""></a>
+                        <a href="https://www.instagram.com/"><img src="../Image/Footer/Intagram.png" alt=""></a>
+                        <a href="https://www.linkedin.com/"><img src="../Image/Footer/Linkedin.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="FooterBottom">
+                <footer>
+                    <div class="copy">
+                        &copy;<p>Copyright Rimel 2022. All right reserved</p>
+                    </div>
+                </footer>
+            </div>
+        </div>  
+    </div>
+    <script src="./../JS/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../JS/darkmode.js"></script> 
+    <script src="../JS/updateHeader.js"></script>
+</body>
+</html>
