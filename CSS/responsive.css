@@ -217,6 +217,80 @@
 
 @media only screen and (max-width:430px) {
 
-  
+  div.Menu{
+    display: none;
+  }
+  div.Exclusivelogo{
+    display:none;
+  }
+  div.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  div.menuNav{
+    display:block;
+    position: relative;
+  }
+  .bi-card-list{
+    font-size: 2.5em;
+  }
+  div.menuNav div.Menu{
+    position: absolute;
+  }
+  div.menuNav:hover div.Menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em ;
+    padding-right: 2em ;
+    padding-top:0.625em ;
+    padding-bottom:1em ;
+    background-color:rgb(203, 201, 201);
+    gap:0.625em;
+  }
+  div.menuNav:hover div.Menu a{
+    opacity: 1;
+  }
+  div.GroupHeader{
+    display: none;
+  }
+  div.GroupHeader{
+    display: block;
+    position: fixed;
+    top: 0;
+    background-color: white;
+  }
+  /* Sing up */
+  #Singupform{
+    display: none;
+  }
+  #Singupform{
+    display: block;
+    margin-left: 20em;
+  }
+  /* Log In */
+  #Loginform{
+    display: none;
+  }
+  #Loginform{
+    display: block;
+    margin-left: 20em;
+  }
+  /* Contact */
+  div.Contact{
+    display: none;
+  }
+  div.Contact{
+    display: block;
+    padding-top:25em ;
+  }
+  div.Content{
+    display: none;
+  }
+  div.Content{
+    display: block;
+    padding-top:5em ;
 
+  }
+  
 }
