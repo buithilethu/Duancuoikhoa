@@ -1,13 +1,13 @@
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Kiểm tra trạng thái đăng nhập của người dùng
+// Khi người dùng đăng nhập thành công
+localStorage.setItem('isLoggedIn', 'true');
+ // Kiểm tra trạng thái đăng nhập khi trang được tải
+ document.addEventListener('DOMContentLoaded', function() {
     const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    const userIcon = document.querySelector('.user-icon');
 
     if (isLoggedIn) {
-        // Nếu người dùng đã đăng nhập, hiển thị biểu tượng người dùng
-        document.querySelector('.user-icon').style.display = 'block';
+        userIcon.classList.add('hidden');
     } else {
-        // Nếu chưa đăng nhập, giữ nguyên trạng thái ẩn
-        document.querySelector('.user-icon').style.display = 'none';
+        userIcon.classList.remove('hidden');
     }
 });
